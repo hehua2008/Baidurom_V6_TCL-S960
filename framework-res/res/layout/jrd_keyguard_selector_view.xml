@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.internal.policy.impl.keyguard.JrdKeyguardSelectorView android:orientation="vertical" android:id="@id/keyguard_selector_view" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/keyguard_accessibility_slide_unlock" android:layout_maxHeight="@dimen/keyguard_security_height" android:layout_maxWidth="420.0dip"
+  xmlns:prvandroid="http://schemas.android.com/apk/prv/res/android"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center" android:layout_gravity="center" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" layout="@layout/keyguard_message_area" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/supermode_tip_ly" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-28.0dip">
+            <ImageView android:background="@drawable/ic_setting_switch_ultimatesavermode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?textAppearanceMedium" android:textSize="16.0sp" android:textColor="?textColorPrimary" android:ellipsize="marquee" android:gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/supermode_tip" android:singleLine="true" android:shadowColor="#ff000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="3.0" android:drawablePadding="4.0dip" />
+        </LinearLayout>
+        <View android:id="@id/keyguard_selector_view_frame" android:background="@drawable/kg_bouncer_bg_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+        <FrameLayout android:id="@id/keyguard_unlock_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+            <include layout="@layout/jrd_keyguard_glow_pad_container" />
+        </FrameLayout>
+        <include android:layout_gravity="top|center" android:id="@id/keyguard_selector_fade_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="10.0dip" layout="@layout/keyguard_eca" />
+    </FrameLayout>
+</com.android.internal.policy.impl.keyguard.JrdKeyguardSelectorView>

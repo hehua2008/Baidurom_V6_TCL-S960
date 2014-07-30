@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="emailAddressTypes">
+        <item>Laman Utama</item>
+        <item>Kerja</item>
+        <item>Lain</item>
+        <item>Tersuai</item>
+    </string-array>
+    <string-array name="imProtocols">
+        <item>AIM</item>
+        <item>Windows Live</item>
+        <item>Yahoo</item>
+        <item>Skype</item>
+        <item>QQ</item>
+        <item>Google Talk</item>
+        <item>ICQ</item>
+        <item>Jabber</item>
+    </string-array>
+    <string-array name="organizationTypes">
+        <item>Kerja</item>
+        <item>Lain</item>
+        <item>Tersuai</item>
+    </string-array>
+    <string-array name="phoneTypes">
+        <item>Laman Utama</item>
+        <item>Mudah alih</item>
+        <item>Kerja</item>
+        <item>Kerja Faks</item>
+        <item>Faks Rumah</item>
+        <item>Alat Kelui</item>
+        <item>Lain</item>
+        <item>Tersuai</item>
+    </string-array>
+    <string-array name="postalAddressTypes">
+        <item>Laman Utama</item>
+        <item>Kerja</item>
+        <item>Lain</item>
+        <item>Tersuai</item>
+    </string-array>
+    <string-array name="imAddressTypes">
+        <item>Laman Utama</item>
+        <item>Kerja</item>
+        <item>Lain</item>
+        <item>Tersuai</item>
+    </string-array>
+</resources>

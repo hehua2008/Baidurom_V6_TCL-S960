@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="emailAddressTypes">
+        <item>主要信箱</item>
+        <item>公司信箱</item>
+        <item>其他信箱</item>
+        <item>自訂</item>
+    </string-array>
+    <string-array name="imProtocols">
+        <item>AIM</item>
+        <item>Windows Live</item>
+        <item>Yahoo</item>
+        <item>Skype</item>
+        <item>QQ</item>
+        <item>Google Talk</item>
+        <item>ICQ</item>
+        <item>Jabber</item>
+    </string-array>
+    <string-array name="organizationTypes">
+        <item>工作</item>
+        <item>其他</item>
+        <item>自訂</item>
+    </string-array>
+    <string-array name="phoneTypes">
+        <item>家居電話</item>
+        <item>手提電話</item>
+        <item>公司電話</item>
+        <item>公司傳真</item>
+        <item>家居傳真</item>
+        <item>傳呼機</item>
+        <item>其他</item>
+        <item>自訂</item>
+    </string-array>
+    <string-array name="postalAddressTypes">
+        <item>家居</item>
+        <item>公司</item>
+        <item>其他</item>
+        <item>自訂</item>
+    </string-array>
+    <string-array name="imAddressTypes">
+        <item>家居</item>
+        <item>工作</item>
+        <item>其他</item>
+        <item>自訂</item>
+    </string-array>
+</resources>
