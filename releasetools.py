@@ -15,10 +15,11 @@ ui_print("*         14.07.17         *");
 ui_print("*        by hehua2008      *");
 ui_print("*   bbs.tclmobile.com.cn   *");
 ui_print("****************************");
-ui_print("Removing custpack bootanimation...");
+ui_print("Removing custpack bootanimation & JRD_custres...");
 mount("ext4", "EMMC", "/dev/block/mmcblk0p5", "/custpack");
 delete("/custpack/JRD_custres/media/bootanimation.zip");
-delete_recursive("/custpack/app");
+delete_recursive("/custpack/app",
+                 "/custpack/JRD_custres");
 unmount("/custpack");"""
     return
 

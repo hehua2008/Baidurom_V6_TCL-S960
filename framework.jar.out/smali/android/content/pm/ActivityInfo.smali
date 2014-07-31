@@ -11,10 +11,6 @@
 
 .field public static final CONFIG_FONT_SCALE:I = 0x40000000
 
-.field public static final CONFIG_FONT_STYLE:I = 0x20000000
-
-.field public static final CONFIG_JRDTHEME_THEME_TWO:I = 0x8000
-
 .field public static final CONFIG_KEYBOARD:I = 0x10
 
 .field public static final CONFIG_KEYBOARD_HIDDEN:I = 0x20

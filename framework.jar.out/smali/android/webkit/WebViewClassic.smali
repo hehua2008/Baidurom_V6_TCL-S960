@@ -27,7 +27,6 @@
         Landroid/webkit/WebViewClassic$ProxyReceiver;,
         Landroid/webkit/WebViewClassic$TrustStorageListener;,
         Landroid/webkit/WebViewClassic$Factory;,
-        Landroid/webkit/WebViewClassic$ThemeChangedReceiver;,
         Landroid/webkit/WebViewClassic$FocusNodeHref;,
         Landroid/webkit/WebViewClassic$OnTrimMemoryListener;,
         Landroid/webkit/WebViewClassic$PastePopupWindow;,
@@ -21630,186 +21629,167 @@
 .end method
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
-    .locals 9
+    .locals 8
     .parameter "keyCode"
     .parameter "event"
 
     .prologue
-    const/4 v4, 0x1
+    const/4 v3, 0x1
 
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     .line 5733
-    const-string/jumbo v5, "webview"
+    const-string/jumbo v4, "webview"
 
-    new-instance v6, Ljava/lang/StringBuilder;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v7, "keyUp at "
+    const-string v6, "keyUp at "
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v5
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    move-result-wide v7
+    move-result-wide v6
 
-    invoke-virtual {v6, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v5
 
-    const-string v7, ", "
+    const-string v6, ", "
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v5
 
-    invoke-virtual {v6, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v5
 
-    const-string v7, ", unicode="
+    const-string v6, ", unicode="
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v5
 
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getUnicodeChar()I
 
-    move-result v7
+    move-result v6
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v5
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v5
 
-    invoke-static {v5, v6}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 5736
-    iget-boolean v5, p0, Landroid/webkit/WebViewClassic;->mBlockWebkitViewMessages:Z
+    iget-boolean v4, p0, Landroid/webkit/WebViewClassic;->mBlockWebkitViewMessages:Z
 
-    if-eqz v5, :cond_1
+    if-eqz v4, :cond_1
 
     .line 5789
     :cond_0
     :goto_0
-    return v3
+    return v2
 
     .line 5740
     :cond_1
-    iget v5, p0, Landroid/webkit/WebViewClassic;->mNativeClass:I
+    iget v4, p0, Landroid/webkit/WebViewClassic;->mNativeClass:I
 
-    if-eqz v5, :cond_0
+    if-eqz v4, :cond_0
 
     .line 5745
-    const/4 v5, 0x5
+    const/4 v4, 0x5
 
-    if-ne p1, v5, :cond_2
+    if-ne p1, v4, :cond_2
 
-    iget-object v5, p0, Landroid/webkit/WebViewClassic;->mInitialHitTestResult:Landroid/webkit/WebView$HitTestResult;
+    iget-object v4, p0, Landroid/webkit/WebViewClassic;->mInitialHitTestResult:Landroid/webkit/WebView$HitTestResult;
 
-    if-eqz v5, :cond_2
+    if-eqz v4, :cond_2
 
-    iget-object v5, p0, Landroid/webkit/WebViewClassic;->mInitialHitTestResult:Landroid/webkit/WebView$HitTestResult;
+    iget-object v4, p0, Landroid/webkit/WebViewClassic;->mInitialHitTestResult:Landroid/webkit/WebView$HitTestResult;
 
-    invoke-virtual {v5}, Landroid/webkit/WebView$HitTestResult;->getType()I
+    invoke-virtual {v4}, Landroid/webkit/WebView$HitTestResult;->getType()I
 
-    move-result v5
+    move-result v4
 
-    const/4 v6, 0x2
+    const/4 v5, 0x2
 
-    if-ne v5, v6, :cond_2
+    if-ne v4, v5, :cond_2
 
     .line 5748
-    iget-object v3, p0, Landroid/webkit/WebViewClassic;->mInitialHitTestResult:Landroid/webkit/WebView$HitTestResult;
+    iget-object v2, p0, Landroid/webkit/WebViewClassic;->mInitialHitTestResult:Landroid/webkit/WebView$HitTestResult;
 
-    invoke-virtual {v3}, Landroid/webkit/WebView$HitTestResult;->getExtra()Ljava/lang/String;
+    invoke-virtual {v2}, Landroid/webkit/WebView$HitTestResult;->getExtra()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v1
 
     .line 5749
-    .local v2, text:Ljava/lang/String;
-    new-instance v1, Landroid/content/Intent;
+    .local v1, text:Ljava/lang/String;
+    new-instance v0, Landroid/content/Intent;
 
-    const-string v3, "android.intent.action.DIAL"
+    const-string v2, "android.intent.action.DIAL"
 
-    invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-direct {v1, v3, v5}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+    invoke-direct {v0, v2, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
     .line 5752
-    .local v1, intent:Landroid/content/Intent;
-    :try_start_0
-    iget-object v3, p0, Landroid/webkit/WebViewClassic;->mContext:Landroid/content/Context;
+    .local v0, intent:Landroid/content/Intent;
+    iget-object v2, p0, Landroid/webkit/WebViewClassic;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v3, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
-    :try_end_0
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {v2, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    :goto_1
-    move v3, v4
+    move v2, v3
 
     .line 5757
     goto :goto_0
 
     .line 5753
-    :catch_0
-    move-exception v0
-
-    .line 5754
-    .local v0, e:Landroid/content/ActivityNotFoundException;
-    const-string/jumbo v3, "webview"
-
-    const-string v5, "ActivityNotFoundException is occur android.intent.action.DIAL"
-
-    invoke-static {v3, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_1
-
-    .line 5763
-    .end local v0           #e:Landroid/content/ActivityNotFoundException;
-    .end local v1           #intent:Landroid/content/Intent;
-    .end local v2           #text:Ljava/lang/String;
+    .end local v0           #intent:Landroid/content/Intent;
+    .end local v1           #text:Ljava/lang/String;
     :cond_2
     invoke-virtual {p2}, Landroid/view/KeyEvent;->isSystem()Z
 
-    move-result v5
+    move-result v4
 
-    if-nez v5, :cond_0
+    if-nez v4, :cond_0
 
-    iget-object v5, p0, Landroid/webkit/WebViewClassic;->mCallbackProxy:Landroid/webkit/CallbackProxy;
+    iget-object v4, p0, Landroid/webkit/WebViewClassic;->mCallbackProxy:Landroid/webkit/CallbackProxy;
 
-    invoke-virtual {v5, p2}, Landroid/webkit/CallbackProxy;->uiOverrideKeyEvent(Landroid/view/KeyEvent;)Z
+    invoke-virtual {v4, p2}, Landroid/webkit/CallbackProxy;->uiOverrideKeyEvent(Landroid/view/KeyEvent;)Z
 
-    move-result v5
+    move-result v4
 
-    if-nez v5, :cond_0
+    if-nez v4, :cond_0
 
     .line 5769
     invoke-direct {p0}, Landroid/webkit/WebViewClassic;->isAccessibilityInjectionEnabled()Z
 
-    move-result v5
+    move-result v4
 
-    if-eqz v5, :cond_3
+    if-eqz v4, :cond_3
 
     invoke-direct {p0}, Landroid/webkit/WebViewClassic;->getAccessibilityInjector()Landroid/webkit/AccessibilityInjector;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-virtual {v5, p2}, Landroid/webkit/AccessibilityInjector;->handleKeyEventIfNecessary(Landroid/view/KeyEvent;)Z
+    invoke-virtual {v4, p2}, Landroid/webkit/AccessibilityInjector;->handleKeyEventIfNecessary(Landroid/view/KeyEvent;)Z
 
-    move-result v5
+    move-result v4
 
-    if-eqz v5, :cond_3
+    if-eqz v4, :cond_3
 
-    move v3, v4
+    move v2, v3
 
     .line 5771
     goto :goto_0
@@ -21818,24 +21798,24 @@
     :cond_3
     invoke-direct {p0, p1}, Landroid/webkit/WebViewClassic;->isEnterActionKey(I)Z
 
-    move-result v5
+    move-result v4
 
-    if-eqz v5, :cond_4
+    if-eqz v4, :cond_4
 
     .line 5776
-    iget-object v5, p0, Landroid/webkit/WebViewClassic;->mPrivateHandler:Landroid/os/Handler;
+    iget-object v4, p0, Landroid/webkit/WebViewClassic;->mPrivateHandler:Landroid/os/Handler;
 
-    const/16 v6, 0x72
+    const/16 v5, 0x72
 
-    invoke-virtual {v5, v6}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-virtual {v4, v5}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 5777
-    iput-boolean v3, p0, Landroid/webkit/WebViewClassic;->mGotCenterDown:Z
+    iput-boolean v2, p0, Landroid/webkit/WebViewClassic;->mGotCenterDown:Z
 
     .line 5779
-    iget-boolean v3, p0, Landroid/webkit/WebViewClassic;->mSelectingText:Z
+    iget-boolean v2, p0, Landroid/webkit/WebViewClassic;->mSelectingText:Z
 
-    if-eqz v3, :cond_4
+    if-eqz v2, :cond_4
 
     .line 5780
     invoke-virtual {p0}, Landroid/webkit/WebViewClassic;->copySelection()Z
@@ -21843,7 +21823,7 @@
     .line 5781
     invoke-virtual {p0}, Landroid/webkit/WebViewClassic;->selectionDone()V
 
-    move v3, v4
+    move v2, v3
 
     .line 5782
     goto :goto_0
@@ -21852,7 +21832,7 @@
     :cond_4
     invoke-direct {p0, p2}, Landroid/webkit/WebViewClassic;->sendKeyEvent(Landroid/view/KeyEvent;)V
 
-    move v3, v4
+    move v2, v3
 
     .line 5789
     goto :goto_0

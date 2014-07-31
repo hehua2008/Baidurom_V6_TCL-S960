@@ -27,7 +27,7 @@ RESOLUTION := 1080x1920
 # NULL, check boot.img/recovery.img in project root directory, if it exists,
 # use a prebuilt boot.img/recovery.img, if not, nothing to do
 #-----------------------------------------------------------------------------
-vendor_modify_images := 
+# vendor_modify_images := boot recovery
 
 ##############################################################################
 # Directorys which you want to remove in vendor directory
@@ -118,7 +118,7 @@ baidu_modify_jars := android.policy
 
 # hide the soft mainkeys
 
-VERSION := 53.30
+VERSION := 53.31
 PHONE_VERSION := TCL-S960_R_2.3.$(VERSION)
 
 override_property += \

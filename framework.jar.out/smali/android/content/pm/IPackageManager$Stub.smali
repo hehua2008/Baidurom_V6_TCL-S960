@@ -38,8 +38,6 @@
 
 .field static final TRANSACTION_checkAPKSignatures:I = 0x57
 
-.field static final TRANSACTION_checkJrdThemePermission:I = 0x5b
-
 .field static final TRANSACTION_checkPermission:I = 0xf
 
 .field static final TRANSACTION_checkSignatures:I = 0x16
@@ -5458,62 +5456,7 @@
 
     goto :goto_3f
 
-    .line 1356
-    .end local v19           #_result:Z
-    :sswitch_5b
-    const-string v3, "android.content.pm.IPackageManager"
-
-    move-object/from16 v0, p2
-
-    invoke-virtual {v0, v3}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
-
-    .line 1358
-    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    move-result-object v4
-
-    .line 1360
-    .restart local v4       #_arg0:Ljava/lang/String;
-    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    move-result-object v5
-
-    .line 1361
-    .local v5, _arg1:Ljava/lang/String;
-    move-object/from16 v0, p0
-
-    invoke-virtual {v0, v4, v5}, Landroid/content/pm/IPackageManager$Stub;->checkJrdThemePermission(Ljava/lang/String;Ljava/lang/String;)Z
-
-    move-result v19
-
-    .line 1362
-    .restart local v19       #_result:Z
-    invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
-
-    .line 1363
-    if-eqz v19, :cond_3f
-
-    const/4 v3, 0x1
-
-    :goto_40
-    move-object/from16 v0, p3
-
-    invoke-virtual {v0, v3}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 1364
-    const/4 v3, 0x1
-
-    goto/16 :goto_0
-
-    .line 1363
-    :cond_3f
-    const/4 v3, 0x0
-
-    goto :goto_40
-
     .line 44
-    nop
-
     :sswitch_data_0
     .sparse-switch
         0x1 -> :sswitch_1
@@ -5606,7 +5549,6 @@
         0x58 -> :sswitch_58
         0x59 -> :sswitch_59
         0x5a -> :sswitch_5a
-        0x5b -> :sswitch_5b
         0x5f4e5446 -> :sswitch_0
     .end sparse-switch
 .end method

@@ -63,14 +63,6 @@
     .end annotation
 .end method
 
-.method public abstract checkJrdThemePermission(Ljava/lang/String;Ljava/lang/String;)Z
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
 .method public abstract checkPermission(Ljava/lang/String;Ljava/lang/String;)I
     .annotation system Ldalvik/annotation/Throws;
         value = {

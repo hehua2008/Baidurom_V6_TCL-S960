@@ -130,8 +130,6 @@
 
 .field public static final GET_ACTIVITIES:I = 0x1
 
-.field public static final GET_CATEGORYLAUNCHER_PACKAGES:I = 0x8000
-
 .field public static final GET_CONFIGURATIONS:I = 0x4000
 
 .field public static final GET_DISABLED_COMPONENTS:I = 0x200

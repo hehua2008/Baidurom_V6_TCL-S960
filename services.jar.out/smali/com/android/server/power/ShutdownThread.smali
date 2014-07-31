@@ -58,6 +58,7 @@
 
 .field private static mReboot:Z = false
 
+.field private static mRebootFlg:Z = false
 .field private static mRebootReason:Ljava/lang/String; = null
 
 .field private static mRebootSafeMode:Z = false

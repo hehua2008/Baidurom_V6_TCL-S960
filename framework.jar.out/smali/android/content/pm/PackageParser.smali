@@ -8240,16 +8240,6 @@
 
     if-nez v3, :cond_4
 
-    const-string/jumbo v3, "jrdcom"
-
-    move-object/from16 v0, v35
-
-    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_4
-
     .line 1042
     const/4 v3, 0x0
 
@@ -10688,14 +10678,6 @@
 
     if-nez v12, :cond_6
 
-    const-string/jumbo v12, "jrdcom"
-
-    invoke-virtual {v12, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v12
-
-    if-nez v12, :cond_6
-
     .line 870
     const/4 v12, 0x0
 
@@ -11384,14 +11366,6 @@
     if-eqz v0, :cond_6
 
     const-string v4, "android"
-
-    invoke-virtual {v4, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-nez v4, :cond_6
-
-    const-string v4, "jrdcom"
 
     invoke-virtual {v4, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
