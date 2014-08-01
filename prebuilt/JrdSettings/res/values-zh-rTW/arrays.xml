@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="screen_timeout_entries">
+        <item>15 秒</item>
+        <item>30 秒</item>
+        <item>1 分鐘</item>
+        <item>2 分鐘</item>
+        <item>5 分鐘</item>
+        <item>10 分鐘</item>
+        <item>30 分鐘</item>
+        <item>從不</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>永不</item>
+        <item>15 秒</item>
+        <item>30 秒</item>
+        <item>1 分鐘</item>
+        <item>2 分鐘</item>
+        <item>5 分鐘</item>
+        <item>10 分鐘</item>
+        <item>30 分鐘</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>立即</item>
+        <item>5 秒</item>
+        <item>15 秒</item>
+        <item>30 秒</item>
+        <item>1 分鐘</item>
+        <item>2 分鐘</item>
+        <item>5 分鐘</item>
+        <item>10 分鐘</item>
+        <item>30 分鐘</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>小</item>
+        <item>適中</item>
+        <item>大</item>
+        <item>特大</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>非常慢</item>
+        <item>慢</item>
+        <item>一般</item>
+        <item>快</item>
+        <item>非常快</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>掃描中…</item>
+        <item>連接中…</item>
+        <item>驗證中…</item>
+        <item>正在獲取IP地址…</item>
+        <item>已連接</item>
+        <item>已暫停</item>
+        <item>斷開連接中…</item>
+        <item>已斷開連接</item>
+        <item>失敗</item>
+        <item>已封鎖</item>
+        <item>目前正暫時避開品質不佳的連線</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>掃描中…</item>
+        <item>正在連接至%1$s…</item>
+        <item>正在驗證%1$s…</item>
+        <item>正從%1$s獲取IP地址…</item>
+        <item>已連接至%1$s</item>
+        <item>已暫停</item>
+        <item>已從%1$s斷開連接…</item>
+        <item>已斷開連接</item>
+        <item>失敗</item>
+        <item>已封鎖</item>
+        <item>目前正暫時避開品質不佳的連線</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>按下按鈕</item>
+        <item>對等裝置 PIN 碼</item>
+        <item>本裝置PIN碼</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>已連接</item>
+        <item>已完成邀請</item>
+        <item>失敗</item>
+        <item>有空</item>
+        <item>距離過遠</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 分鐘</item>
+        <item>5 分鐘</item>
+        <item>1 小時</item>
+        <item>無時限</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>差</item>
+        <item>可</item>
+        <item>良</item>
+        <item>優</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>永遠要</item>
+        <item>只在充電時連線</item>
+        <item>一律不連線 (增加數據用量)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>保持開啟</item>
+        <item>僅於連接時採用</item>
+        <item>關閉</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>自動</item>
+        <item>僅限5 GHz</item>
+        <item>僅限 2.4 GHz</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>使用時間</item>
+        <item>啟動次數</item>
+        <item>應用程式名稱</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>無</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>靜態</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>無</item>
+        <item>手動</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>關閉</item>
+        <item>警示</item>
+        <item>震動</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>無</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP 或 CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>未定義</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>內部設備儲存</item>
+        <item>SD 卡</item>
+        <item>由系統決定</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>短</item>
+        <item>普通</item>
+        <item>長</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>永不檢查</item>
+        <item>僅檢查 DRM 內容</item>
+        <item>一律檢查</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>永不使用HDCP檢查</item>
+        <item>僅利用 HDCP 檢查 DRM 內容</item>
+        <item>一律使用HDCP檢查</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>動畫關閉</item>
+        <item>動畫比例 0.5x</item>
+        <item>動畫比例 1x</item>
+        <item>動畫比例 1.5x</item>
+        <item>動畫比例 2x</item>
+        <item>動畫比例 5x</item>
+        <item>動畫比例 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>動畫關閉</item>
+        <item>動畫比例 0.5x</item>
+        <item>動畫比例 1x</item>
+        <item>動畫比例 1.5x</item>
+        <item>動畫比例 2x</item>
+        <item>動畫比例 5x</item>
+        <item>動畫比例 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>動畫關閉</item>
+        <item>動畫比例 0.5x</item>
+        <item>動畫比例 1x</item>
+        <item>動畫比例 1.5x</item>
+        <item>動畫比例 2x</item>
+        <item>動畫比例 5x</item>
+        <item>動畫比例 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>無</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi 和 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>無</item>
+        <item>Logcat</item>
+        <item>Systrace (圖片)</item>
+        <item>glGetError 的呼叫堆疊</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>標準限制</item>
+        <item>無背景程序</item>
+        <item>最多1項作業</item>
+        <item>最多 2 個程序</item>
+        <item>最多3項作業</item>
+        <item>最多 4 個程序</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>使用預先共用金鑰的 L2TP/IPSec VPN</item>
+        <item>具有認證之L2TP/IPSec VPN。</item>
+        <item>使用預先共用金鑰及 Xauth 驗證的 IPSec VPN</item>
+        <item>具有認證與Xauth驗證之IPSec VPN。</item>
+        <item>使用憑證與交互式驗證的 IPSec VPN</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>已中斷連線</item>
+        <item>初始中…</item>
+        <item>正在連接…</item>
+        <item>已連線</item>
+        <item>逾時</item>
+        <item>失敗</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>詢問</item>
+        <item>一律不允許</item>
+        <item>一律允許</item>
+    </string-array>
+    <string-array name="gestures_alarm_item">
+        <item>貪睡</item>
+        <item>停止</item>
+    </string-array>
+    <string-array name="timezone_label_new">
+        <item>馬紹爾群島</item>
+        <item>夏威夷</item>
+        <item>阿拉斯加</item>
+        <item>太平洋時間</item>
+        <item>提華納</item>
+        <item>亞利桑納</item>
+        <item>奇瓦瓦</item>
+        <item>美國山區時間</item>
+        <item>中美洲</item>
+        <item>中部時間</item>
+        <item>薩克其萬</item>
+        <item>東部時間</item>
+        <item>委內瑞拉</item>
+        <item>大西洋時間</item>
+        <item>大西洋時間（加拿大）</item>
+        <item>瑪瑙斯</item>
+        <item>紐芬蘭</item>
+        <item>大西洋中部</item>
+        <item>亞爾述群島</item>
+        <item>維德角群島</item>
+        <item>卡薩布蘭卡</item>
+        <item>非洲西部時間</item>
+        <item>安曼，約旦</item>
+        <item>伊斯坦堡</item>
+        <item>貝魯特，黎巴嫩</item>
+        <item>德黑蘭</item>
+        <item>烏拉爾斯克</item>
+        <item>凱薩琳堡</item>
+        <item>加爾各答</item>
+        <item>加德滿都</item>
+        <item>仰光</item>
+        <item>克拉斯諾亞爾斯克</item>
+        <item>曼谷</item>
+        <item>香港</item>
+        <item>伊爾庫次克</item>
+        <item>柏斯</item>
+        <item>大阪</item>
+        <item>亞庫次克</item>
+        <item>阿德雷德</item>
+        <item>達爾文</item>
+        <item>布里斯本</item>
+        <item>霍巴特</item>
+        <item>坎培拉</item>
+        <item>海參威</item>
+        <item>馬加丹</item>
+        <item>奧克蘭</item>
+        <item>斐濟</item>
+        <item>秘魯</item>
+        <item>阿布扎比</item>
+        <item>阿布賈</item>
+        <item>阿克拉</item>
+        <item>亞當斯敦</item>
+        <item>亞的斯亞貝巴</item>
+        <item>阿爾及爾</item>
+        <item>阿洛菲</item>
+        <item>阿姆斯特丹</item>
+        <item>安道爾城</item>
+        <item>安卡拉</item>
+        <item>塔那那利佛</item>
+        <item>阿什哈巴德</item>
+        <item>阿斯馬拉</item>
+        <item>阿斯塔納</item>
+        <item>雅典</item>
+        <item>阿瓦魯阿</item>
+        <item>巴格達</item>
+        <item>巴庫</item>
+        <item>巴馬科</item>
+        <item>斯里巴加灣市</item>
+        <item>薩格勒布</item>
+        <item>班吉</item>
+        <item>班珠爾</item>
+        <item>巴斯特爾</item>
+        <item>北京</item>
+        <item>貝爾法斯特</item>
+        <item>貝爾格勒</item>
+        <item>貝爾莫潘</item>
+        <item>柏林</item>
+        <item>伯爾尼</item>
+        <item>比什凱克</item>
+        <item>比紹</item>
+        <item>波哥達</item>
+        <item>巴西利亞</item>
+        <item>布拉迪斯拉發</item>
+        <item>布拉扎維爾</item>
+        <item>布里奇敦</item>
+        <item>布魯塞爾</item>
+        <item>布加勒斯特</item>
+        <item>布達佩斯</item>
+        <item>布宜諾斯艾里斯</item>
+        <item>布瓊布拉</item>
+        <item>開羅</item>
+        <item>坎培拉</item>
+        <item>卡迪夫</item>
+        <item>卡斯特里</item>
+        <item>卡宴</item>
+        <item>夏洛特阿馬利亞</item>
+        <item>基希訥烏</item>
+        <item>科伯恩城</item>
+        <item>科納克里</item>
+        <item>哥本哈根</item>
+        <item>達喀爾</item>
+        <item>達卡</item>
+        <item>帝力</item>
+        <item>吉布提</item>
+        <item>多多馬</item>
+        <item>多哈</item>
+        <item>道格拉斯</item>
+        <item>杜拜</item>
+        <item>都柏林</item>
+        <item>杜尚別</item>
+        <item>愛丁堡</item>
+        <item>七海愛丁堡</item>
+        <item>飛魚灣</item>
+        <item>弗里敦</item>
+        <item>富納富提</item>
+        <item>哈博羅內</item>
+        <item>喬治城（開曼群島）</item>
+        <item>喬治敦（阿森松島）</item>
+        <item>喬治敦（圭亞那）</item>
+        <item>直布羅陀</item>
+        <item>葛利特維根</item>
+        <item>危地馬拉城</item>
+        <item>古斯塔維亞</item>
+        <item>阿加尼亞</item>
+        <item>漢密爾頓</item>
+        <item>安加羅阿</item>
+        <item>河內</item>
+        <item>哈拉雷</item>
+        <item>哈瓦那</item>
+        <item>赫爾辛基</item>
+        <item>霍尼亞拉</item>
+        <item>伊斯蘭堡</item>
+        <item>雅加達</item>
+        <item>詹姆斯敦</item>
+        <item>耶路撒冷</item>
+        <item>朱巴</item>
+        <item>喀布爾</item>
+        <item>坎帕拉</item>
+        <item>卡拉奇</item>
+        <item>阿皮亞</item>
+        <item>喀土穆</item>
+        <item>基輔</item>
+        <item>基加利</item>
+        <item>金斯敦（牙買加）</item>
+        <item>金士頓（諾福克島）</item>
+        <item>金斯敦</item>
+        <item>金沙薩</item>
+        <item>吉隆坡</item>
+        <item>科威特</item>
+        <item>利伯維爾</item>
+        <item>利隆圭</item>
+        <item>利馬</item>
+        <item>里斯本</item>
+        <item>盧布爾雅那</item>
+        <item>洛美</item>
+        <item>倫敦</item>
+        <item>羅安達</item>
+        <item>盧薩卡</item>
+        <item>盧森堡</item>
+        <item>馬德里</item>
+        <item>馬朱羅</item>
+        <item>馬拉博</item>
+        <item>馬列</item>
+        <item>馬那瓜</item>
+        <item>麥納麥</item>
+        <item>馬尼拉</item>
+        <item>馬普托</item>
+        <item>馬里戈特</item>
+        <item>馬塞盧</item>
+        <item>馬塔烏圖</item>
+        <item>墨巴本</item>
+        <item>梅萊凱奧克</item>
+        <item>墨西哥市</item>
+        <item>明斯克</item>
+        <item>摩加迪沙</item>
+        <item>摩納哥</item>
+        <item>蒙羅維亞</item>
+        <item>蒙特維多</item>
+        <item>莫羅尼</item>
+        <item>莫斯科</item>
+        <item>馬斯喀特</item>
+        <item>奈洛比</item>
+        <item>拿騷</item>
+        <item>內比都</item>
+        <item>恩賈梅納</item>
+        <item>新德里</item>
+        <item>尼亞美</item>
+        <item>尼科西亞</item>
+        <item>努瓦克肖特</item>
+        <item>努美阿</item>
+        <item>努庫阿洛法</item>
+        <item>格林蘭島</item>
+        <item>奧拉涅斯塔</item>
+        <item>奧斯陸</item>
+        <item>渥太華</item>
+        <item>瓦加杜古</item>
+        <item>帕果帕果</item>
+        <item>帕利基爾</item>
+        <item>巴拿馬城</item>
+        <item>帕皮提</item>
+        <item>帕拉馬里博</item>
+        <item>巴黎</item>
+        <item>菲利普斯堡</item>
+        <item>金邊</item>
+        <item>普利茅斯</item>
+        <item>波多里加</item>
+        <item>路易港</item>
+        <item>莫爾斯比港</item>
+        <item>維拉港</item>
+        <item>太子港</item>
+        <item>西班牙港</item>
+        <item>波多諾伏</item>
+        <item>布拉格</item>
+        <item>普拉亞</item>
+        <item>比勒陀利亞</item>
+        <item>普里什蒂納</item>
+        <item>平壤</item>
+        <item>基多</item>
+        <item>拉巴特</item>
+        <item>裡加</item>
+        <item>裡加</item>
+        <item>利雅得</item>
+        <item>羅德城</item>
+        <item>羅馬</item>
+        <item>羅索</item>
+        <item>塞班</item>
+        <item>聖荷西</item>
+        <item>聖胡安</item>
+        <item>聖馬力諾</item>
+        <item>聖薩爾瓦多</item>
+        <item>薩納</item>
+        <item>聖地亞哥</item>
+        <item>聖多明各</item>
+        <item>聖多美和普林西比</item>
+        <item>薩拉熱窩</item>
+        <item>首爾</item>
+        <item>新加坡</item>
+        <item>斯科普里</item>
+        <item>索非亞</item>
+        <item>斯里蘭卡Jayawardenapura科特市</item>
+        <item>聖喬治</item>
+        <item>聖赫利爾</item>
+        <item>聖約翰</item>
+        <item>聖彼得港</item>
+        <item>聖皮埃爾</item>
+        <item>史丹利</item>
+        <item>斯德哥爾摩</item>
+        <item>蘇克雷</item>
+        <item>台北</item>
+        <item>塔林</item>
+        <item>塔拉瓦</item>
+        <item>塔什幹</item>
+        <item>第比利斯</item>
+        <item>廷布</item>
+        <item>地拉那</item>
+        <item>東京</item>
+        <item>托爾斯港</item>
+        <item>的黎波里</item>
+        <item>突尼斯</item>
+        <item>烏蘭巴托</item>
+        <item>瓦杜茲</item>
+        <item>瓦萊塔</item>
+        <item>山谷市</item>
+        <item>梵蒂岡城</item>
+        <item>維多利亞</item>
+        <item>維也納</item>
+        <item>萬象</item>
+        <item>維爾紐斯</item>
+        <item>華沙</item>
+        <item>華盛頓</item>
+        <item>威靈頓</item>
+        <item>西島</item>
+        <item>威廉斯塔德</item>
+        <item>溫特和克</item>
+        <item>亞穆蘇克羅</item>
+        <item>雅溫得</item>
+        <item>瑙鲁</item>
+        <item>埃里溫</item>
+        <item>厄瓜多爾</item>
+        <item>新西伯利亞</item>
+        <item>加里寧格勒</item>
+        <item>亞松森</item>
+        <item>拉巴斯</item>
+    </string-array>
+    <string-array name="screen_off_entries">
+        <item>老式TV動畫模式</item>
+        <item>淡出動畫模式</item>
+    </string-array>
+    <string-array name="gemini_sim_info_number_display_format_entries">
+        <item>前 4 個數字</item>
+        <item>後 4 個數字</item>
+        <item>不顯示</item>
+    </string-array>
+    <string-array name="gemini_sim_roaming_reminder_entries">
+        <item>一次</item>
+        <item>保持開啟</item>
+        <item>從不</item>
+    </string-array>
+    <string-array name="gsm_umts_network_preferences_choices">
+        <item>GSM/WCDMA 自動切換</item>
+        <item>僅限 WCDMA</item>
+        <item>僅限 GSM</item>
+    </string-array>
+    <string-array name="auto_time_entries">
+        <item>使用網路提供的時間</item>
+        <item>使用 GPS 提供的時間</item>
+        <item>關閉</item>
+    </string-array>
+    <string-array name="sim_slot">
+        <item>(未指定)</item>
+        <item>SIM 卡槽 1</item>
+        <item>SIM 卡槽 2</item>
+    </string-array>
+    <string-array name="wifi_hotspot_disable_policy_entries">
+        <item>保持開啟</item>
+        <item>閒置 5 分鐘時關閉</item>
+        <item>閒置 10 分鐘時關閉</item>
+    </string-array>
+    <string-array name="wifi_WEP_security_type">
+        <item>自動</item>
+        <item>WEP ASCII</item>
+        <item>WEP 十六進位</item>
+    </string-array>
+    <string-array name="wifi_ap_wps_mode_entries">
+        <item>按下按鈕</item>
+        <item>對等裝置 PIN 碼</item>
+    </string-array>
+    <string-array name="wifi_ap_max_connection_entries">
+        <item>1 位使用者</item>
+        <item>2 位使用者</item>
+        <item>3 位使用者</item>
+        <item>4 位使用者</item>
+        <item>5 位使用者</item>
+        <item>6 位使用者</item>
+        <item>7 位使用者</item>
+        <item>8 位使用者</item>
+    </string-array>
+    <string-array name="mouse_primary_button_titles">
+        <item>滑鼠右鍵</item>
+        <item>滑鼠左鍵</item>
+    </string-array>
+    <string-array name="wfd_720p_resolution_entry">
+        <item>720p（60 畫面/秒）</item>
+        <item>720p（30 畫面/秒）</item>
+    </string-array>
+    <string-array name="wfd_1080p_resolution_entry">
+        <item>1080p（30 畫面/秒）</item>
+        <item>720p（60 畫面/秒）</item>
+        <item>720p（30 畫面/秒）</item>
+    </string-array>
+    <string-array name="wifi_hotspot_select_band_array">
+        <item>僅限 2.4 GHz</item>
+        <item>僅限5 GHz</item>
+        <item>2.4 GHz 或 5 GHz</item>
+    </string-array>
+</resources>

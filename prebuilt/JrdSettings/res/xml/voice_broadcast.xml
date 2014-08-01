@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/voice_broadcast"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.jrdsettings">
+    <PreferenceCategory android:persistent="false" android:title="@string/call_voice_broadcast_category_title" android:key="call_voice_broadcast_category" />
+    <SwitchPreference android:title="@string/call_voice_broadcast_title" android:key="call_voice_broadcast" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/turn_over_to_mute_voice_broadcast" android:key="mute_call_voice_broadcast" android:dependency="call_voice_broadcast" android:defaultValue="true" android:disableDependentsState="true" />
+    <PreferenceCategory android:persistent="false" android:title="@string/message_voice_broadcast_category_title" android:key="message_voice_broadcast_category" />
+    <SwitchPreference android:title="@string/message_voice_broadcast_title" android:key="message_voice_broadcast" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/message_voice_broadcast_always_ask_title" android:key="message_voice_broadcast_always_ask" android:summary="@string/message_voice_broadcast_always_ask_summary" android:dependency="message_voice_broadcast" android:defaultValue="false" android:disableDependentsState="true" />
+    <CheckBoxPreference android:title="@string/turn_over_to_mute_voice_broadcast" android:key="mute_message_voice_broadcast" android:dependency="message_voice_broadcast" android:defaultValue="true" android:disableDependentsState="true" />
+    <PreferenceCategory android:persistent="false" android:title="@string/email_voice_broadcast_category_title" android:key="email_voice_broadcast_category" />
+    <SwitchPreference android:title="@string/email_voice_broadcast_title" android:key="email_voice_broadcast" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/turn_over_to_mute_voice_broadcast" android:key="mute_email_voice_broadcast" android:dependency="email_voice_broadcast" android:defaultValue="true" android:disableDependentsState="true" />
+</PreferenceScreen>

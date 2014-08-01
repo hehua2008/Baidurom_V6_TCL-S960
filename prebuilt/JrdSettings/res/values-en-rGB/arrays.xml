@@ -1,0 +1,1361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>America</item>
+        <item>Europe</item>
+        <item>Africa</item>
+        <item>Asia</item>
+        <item>Australia</item>
+        <item>Pacific</item>
+        <item>All</item>
+    </string-array>
+    <string-array name="date_format_values">
+        <item></item>
+        <item>MM-dd-yyyy</item>
+        <item>dd-MM-yyyy</item>
+        <item>yyyy-MM-dd</item>
+        <item>EE-MMM-d-yyyy</item>
+        <item>EE-d-MMM-yyyy</item>
+        <item>yyyy-MMM-d-EE</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>30 minutes</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="screen_timeout_values">
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="screen_brightness_entries">
+        <item>20%</item>
+        <item>30%</item>
+        <item>40%</item>
+        <item>50%</item>
+        <item>60%</item>
+    </string-array>
+    <string-array name="screen_brightness_values">
+        <item>73</item>
+        <item>96</item>
+        <item>119</item>
+        <item>141</item>
+        <item>164</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Never</item>
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>30 minutes</item>
+    </string-array>
+    <string-array name="dream_timeout_values">
+        <item>0</item>
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Immediately</item>
+        <item>5 seconds</item>
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>30 minutes</item>
+    </string-array>
+    <string-array name="lock_after_timeout_values">
+        <item>0</item>
+        <item>5000</item>
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Extra large</item>
+    </string-array>
+    <string-array name="entryvalues_font_size">
+        <item>0.9</item>
+        <item>1.0</item>
+        <item>1.1</item>
+        <item>1.15</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Very slow</item>
+        <item>Slow</item>
+        <item>Normal</item>
+        <item>Fast</item>
+        <item>Very fast</item>
+    </string-array>
+    <string-array name="tts_rate_values">
+        <item>60</item>
+        <item>80</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Very low</item>
+        <item>Low</item>
+        <item>Normal</item>
+        <item>High</item>
+        <item>Very high</item>
+    </string-array>
+    <string-array name="tts_pitch_values">
+        <item>50</item>
+        <item>80</item>
+        <item>100</item>
+        <item>120</item>
+        <item>150</item>
+    </string-array>
+    <string-array name="tts_demo_strings">
+        <item>This is an example of speech synthesis in English.</item>
+        <item>Voici un échantillon de synthèse vocale en français.</item>
+        <item>Dies ist ein Beispiel für Sprachsynthese in Deutsch.</item>
+        <item>Questo è un esempio di sintesi vocale in italiano.</item>
+        <item>Este es un ejemplo de síntesis de voz en español.</item>
+    </string-array>
+    <string-array name="tts_demo_string_langs">
+        <item>eng</item>
+        <item>fra</item>
+        <item>deu</item>
+        <item>ita</item>
+        <item>spa</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Scanning…</item>
+        <item>Connecting…</item>
+        <item>Authenticating…</item>
+        <item>Obtaining IP address…</item>
+        <item>Connected</item>
+        <item>Suspended</item>
+        <item>Disconnecting…</item>
+        <item>Disconnected</item>
+        <item>Unsuccessful</item>
+        <item>Blocked</item>
+        <item>Temporarily avoiding poor connection</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Scanning…</item>
+        <item>Connecting to %1$s…</item>
+        <item>Authenticating with %1$s…</item>
+        <item>Obtaining IP address from %1$s…</item>
+        <item>Connected to %1$s</item>
+        <item>Suspended</item>
+        <item>Disconnecting from %1$s…</item>
+        <item>Disconnected</item>
+        <item>Unsuccessful</item>
+        <item>Blocked</item>
+        <item>Temporarily avoiding poor connection</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wep</item>
+        <item>@string/wifi_security_psk_generic</item>
+        <item>@string/wifi_security_eap</item>
+        <item>WAPI PSK</item>
+        <item>@string/wifi_security_wapi_certificate</item>
+    </string-array>
+    <string-array name="wifi_security_no_eap">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wep</item>
+        <item>@string/wifi_security_psk_generic</item>
+    </string-array>
+    <array name="wifi_ap_security">
+        <item>@string/wifi_security_none</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Push button</item>
+        <item>PIN from client</item>
+        <item>PIN from this device</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Connected</item>
+        <item>Invited</item>
+        <item>Unsuccessful</item>
+        <item>Available</item>
+        <item>Out-of-range</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>1 hour</item>
+        <item>Never timeout</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Poor</item>
+        <item>Fair</item>
+        <item>Good</item>
+        <item>Excellent</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Always</item>
+        <item>Only when plugged in</item>
+        <item>Never (increases data usage)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Always</item>
+        <item>Only when plugged in</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Auto</item>
+        <item>5 GHz only</item>
+        <item>2.4 GHz only</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Usage time</item>
+        <item>Launch count</item>
+        <item>Application name</item>
+    </string-array>
+    <string-array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>None</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Static</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>None</item>
+        <item>Manual</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Off</item>
+        <item>Alert</item>
+        <item>Vibrate</item>
+    </string-array>
+    <string-array name="emergency_tone_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="special_locale_codes">
+        <item>zh_CN</item>
+        <item>zh_TW</item>
+    </string-array>
+    <string-array name="special_locale_names">
+        <item>中文 (简体)</item>
+        <item>中文 (繁體)</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>None</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP or CHAP</item>
+    </string-array>
+    <string-array name="apn_auth_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="apn_protocol_entries">
+        <item>IPv4</item>
+        <item>IPv6</item>
+        <item>IPv4/IPv6</item>
+    </string-array>
+    <string-array name="apn_protocol_values">
+        <item>IP</item>
+        <item>IPV6</item>
+        <item>IPV4V6</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Unspecified</item>
+    </string-array>
+    <string-array name="bearer_values">
+        <item>14</item>
+        <item>13</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Internal device storage</item>
+        <item>SD card</item>
+        <item>Let the system decide</item>
+    </string-array>
+    <string-array name="app_install_location_values">
+        <item>device</item>
+        <item>sdcard</item>
+        <item>auto</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Short</item>
+        <item>Medium</item>
+        <item>Long</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_values">
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Never check</item>
+        <item>Check for DRM content only</item>
+        <item>Always check</item>
+    </string-array>
+    <string-array name="hdcp_checking_values">
+        <item>never</item>
+        <item>drm-only</item>
+        <item>always</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Never use HDCP checking</item>
+        <item>Use HDCP checking for DRM content only</item>
+        <item>Always use HDCP checking</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Animation off</item>
+        <item>Animation scale 0.5x</item>
+        <item>Animation scale 1x</item>
+        <item>Animation scale 1.5x</item>
+        <item>Animation scale 2x</item>
+        <item>Animation scale 5x</item>
+        <item>Animation scale 10x</item>
+    </string-array>
+    <string-array name="window_animation_scale_values">
+        <item>0</item>
+        <item>.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Animation off</item>
+        <item>Animation scale 0.5x</item>
+        <item>Animation scale 1x</item>
+        <item>Animation scale 1.5x</item>
+        <item>Animation scale 2x</item>
+        <item>Animation scale 5x</item>
+        <item>Animation scale 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_values">
+        <item>0</item>
+        <item>.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Animation off</item>
+        <item>Animation scale 0.5x</item>
+        <item>Animation scale 1x</item>
+        <item>Animation scale 1.5x</item>
+        <item>Animation scale 2x</item>
+        <item>Animation scale 5x</item>
+        <item>Animation scale 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_values">
+        <item>0</item>
+        <item>.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>None</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi and 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="overlay_display_devices_values">
+        <item></item>
+        <item>720x480/160</item>
+        <item>1280x720/213</item>
+        <item>1920x1080/320</item>
+        <item>1280x720/213;1920x1080/320</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>None</item>
+        <item>Logcat</item>
+        <item>Systrace (Graphics)</item>
+        <item>Call stack on glGetError</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_values">
+        <item>0</item>
+        <item>1</item>
+        <item>systrace</item>
+        <item>error</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Standard limit</item>
+        <item>No background process</item>
+        <item>At most 1 process</item>
+        <item>At most 2 processes</item>
+        <item>At most 3 processes</item>
+        <item>At most 4 processes</item>
+    </string-array>
+    <string-array name="app_process_limit_values">
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="vpn_types">
+        <item>PPTP</item>
+        <item>L2TP/IPSec PSK</item>
+        <item>L2TP/IPSec RSA</item>
+        <item>IPSec Xauth PSK</item>
+        <item>IPSec Xauth RSA</item>
+        <item>IPSec Hybrid RSA</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN with pre-shared keys</item>
+        <item>L2TP/IPSec VPN with certificates</item>
+        <item>IPSec VPN with pre-shared keys and Xauth authentication</item>
+        <item>IPSec VPN with certificates and Xauth authentication</item>
+        <item>IPSec VPN with certificates and hybrid authentication</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Disconnected</item>
+        <item>Initializing…</item>
+        <item>Connecting…</item>
+        <item>Connected</item>
+        <item>Timeout</item>
+        <item>Unsuccessful</item>
+    </string-array>
+    <string-array name="user_content_ratings_entries">
+        <item>Ascended being</item>
+        <item>Human</item>
+        <item>Neanderthal</item>
+        <item>Chimp</item>
+        <item>Monkey</item>
+    </string-array>
+    <string-array name="user_content_ratings_values">
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Ask</item>
+        <item>Never allow</item>
+        <item>Always allow</item>
+    </string-array>
+    <string-array name="gestures_alarm_item">
+        <item>Snooze</item>
+        <item>Stop</item>
+    </string-array>
+    <string-array name="timezone_label_new">
+        <item>Marshall Islands</item>
+        <item>Hawaii</item>
+        <item>Alaska</item>
+        <item>Pacific Time</item>
+        <item>Tijuana</item>
+        <item>Arizona</item>
+        <item>Chihuahua</item>
+        <item>Mountain Time</item>
+        <item>Central America</item>
+        <item>Central Time</item>
+        <item>Saskatchewan</item>
+        <item>Eastern Time</item>
+        <item>Venezuela</item>
+        <item>Atlantic Time</item>
+        <item>Atlantic Time (Canada)</item>
+        <item>Manaus</item>
+        <item>Newfoundland</item>
+        <item>Mid-Atlantic</item>
+        <item>Azores</item>
+        <item>Cape Verde Islands</item>
+        <item>Casablanca</item>
+        <item>W. Africa Time</item>
+        <item>Amman, Jordan</item>
+        <item>Istanbul</item>
+        <item>Beirut, Lebanon</item>
+        <item>Tehran</item>
+        <item>Uralsk</item>
+        <item>Yekaterinburg</item>
+        <item>Kolkata</item>
+        <item>Kathmandu</item>
+        <item>Yangon</item>
+        <item>Krasnoyarsk</item>
+        <item>Bangkok</item>
+        <item>Hong Kong</item>
+        <item>Irkutsk</item>
+        <item>Perth</item>
+        <item>Osaka</item>
+        <item>Yakutsk</item>
+        <item>Adelaide</item>
+        <item>Darwin</item>
+        <item>Brisbane</item>
+        <item>Hobart</item>
+        <item>Canberra</item>
+        <item>Vladivostok</item>
+        <item>Magadan</item>
+        <item>Auckland</item>
+        <item>Fiji</item>
+        <item>Peru</item>
+        <item>Abu Dhabi</item>
+        <item>Abuja</item>
+        <item>Accra</item>
+        <item>Adamstown</item>
+        <item>Addis Ababa</item>
+        <item>Algiers</item>
+        <item>Alofi</item>
+        <item>Amsterdam</item>
+        <item>Andorra la Vella</item>
+        <item>Ankara</item>
+        <item>Antananarivo</item>
+        <item>Ashgabat</item>
+        <item>Asmara</item>
+        <item>Astana</item>
+        <item>Athens</item>
+        <item>Avarua</item>
+        <item>Baghdad</item>
+        <item>Baku</item>
+        <item>Bamako</item>
+        <item>Bandar Seri Begawan</item>
+        <item>Zagreb</item>
+        <item>Bangui</item>
+        <item>Banjul</item>
+        <item>Basseterre</item>
+        <item>Beijing</item>
+        <item>Belfast</item>
+        <item>Belgrade</item>
+        <item>Belmopan</item>
+        <item>Berlin</item>
+        <item>Bern</item>
+        <item>Bishkek</item>
+        <item>Bissau</item>
+        <item>Bogota</item>
+        <item>Brasilia</item>
+        <item>Bratislava</item>
+        <item>Brazzaville</item>
+        <item>Bridgetown</item>
+        <item>Brussels</item>
+        <item>Bucharest</item>
+        <item>Budapest</item>
+        <item>Buenos Aires</item>
+        <item>Bujumbura</item>
+        <item>Cairo</item>
+        <item>Canberra</item>
+        <item>Cardiff</item>
+        <item>Castries</item>
+        <item>Cayenne</item>
+        <item>Charlotte Amalie</item>
+        <item>Chisinau</item>
+        <item>Cockburn Town</item>
+        <item>Conakry</item>
+        <item>Copenhagen</item>
+        <item>Dakar</item>
+        <item>Dhaka</item>
+        <item>Dili</item>
+        <item>Djibouti</item>
+        <item>Dodoma</item>
+        <item>Doha</item>
+        <item>Douglas</item>
+        <item>Dubai</item>
+        <item>Dublin</item>
+        <item>Dushanbe</item>
+        <item>Edinburgh</item>
+        <item>Edinburgh of the Seven Seas</item>
+        <item>Flying Fish Cove</item>
+        <item>Freetown</item>
+        <item>Funafuti</item>
+        <item>Gaborone</item>
+        <item>George Town (Cayman Islands)</item>
+        <item>Georgetown (Ascension Island)</item>
+        <item>Georgetown (Guyana)</item>
+        <item>Gibraltar</item>
+        <item>Grytviken</item>
+        <item>Guatemala City</item>
+        <item>Gustavia</item>
+        <item>Hagatna</item>
+        <item>Hamilton</item>
+        <item>Hanga Roa</item>
+        <item>Hanoi</item>
+        <item>Harare</item>
+        <item>Havana</item>
+        <item>Helsinki</item>
+        <item>Honiara</item>
+        <item>Islamabad</item>
+        <item>Jakarta</item>
+        <item>Jamestown</item>
+        <item>Jerusalem</item>
+        <item>Juba</item>
+        <item>Kabul</item>
+        <item>Kampala</item>
+        <item>Karachi</item>
+        <item>Apia</item>
+        <item>Khartoum</item>
+        <item>Kiev</item>
+        <item>Kigali</item>
+        <item>Kingston (Jamaica)</item>
+        <item>Kingston (Norfolk Island)</item>
+        <item>Kingstown</item>
+        <item>Kinshasa</item>
+        <item>Kuala Lumpur</item>
+        <item>Kuwait</item>
+        <item>Libreville</item>
+        <item>Lilongwe</item>
+        <item>Lima</item>
+        <item>Lisbon</item>
+        <item>Ljubljana</item>
+        <item>Lome</item>
+        <item>London</item>
+        <item>Luanda</item>
+        <item>Lusaka</item>
+        <item>Luxembourg</item>
+        <item>Madrid</item>
+        <item>Majuro</item>
+        <item>Malabo</item>
+        <item>Male</item>
+        <item>Managua</item>
+        <item>Manama</item>
+        <item>Manila</item>
+        <item>Maputo</item>
+        <item>Marigot</item>
+        <item>Maseru</item>
+        <item>Mata-Utu</item>
+        <item>Mbabane</item>
+        <item>Melekeok</item>
+        <item>Mexico City</item>
+        <item>Minsk</item>
+        <item>Mogadishu</item>
+        <item>Monaco</item>
+        <item>Monrovia</item>
+        <item>Montevideo</item>
+        <item>Moroni</item>
+        <item>Moscow</item>
+        <item>Muscat</item>
+        <item>Nairobi</item>
+        <item>Nassau</item>
+        <item>Naypyidaw</item>
+        <item>"N'Djamena"</item>
+        <item>New Delhi</item>
+        <item>Niamey</item>
+        <item>Nicosia</item>
+        <item>Nouakchott</item>
+        <item>Noumea</item>
+        <item>Nuku alofa</item>
+        <item>Greenland</item>
+        <item>Oranjestad</item>
+        <item>Oslo</item>
+        <item>Ottawa</item>
+        <item>Ouagadougou</item>
+        <item>Pago Pago</item>
+        <item>Palikir</item>
+        <item>Panama City</item>
+        <item>Papeete</item>
+        <item>Paramaribo</item>
+        <item>Paris</item>
+        <item>Philipsburg</item>
+        <item>Phnom Penh</item>
+        <item>Plymouth</item>
+        <item>Podgorica</item>
+        <item>Port Louis</item>
+        <item>Port Moresby</item>
+        <item>Port Vila</item>
+        <item>Port-au-Prince</item>
+        <item>Port of Spain</item>
+        <item>Porto-Novo</item>
+        <item>Prague</item>
+        <item>Praia</item>
+        <item>Pretoria</item>
+        <item>Pristina</item>
+        <item>Pyongyang</item>
+        <item>Quito</item>
+        <item>Rabat</item>
+        <item>Riga</item>
+        <item>Riga</item>
+        <item>Riyadh</item>
+        <item>Road Town</item>
+        <item>Rome</item>
+        <item>Roseau</item>
+        <item>Saipan</item>
+        <item>San Jose</item>
+        <item>San Juan</item>
+        <item>San Marino</item>
+        <item>San Salvador</item>
+        <item>Sana</item>
+        <item>Santiago</item>
+        <item>Santo Domingo</item>
+        <item>Sao Tome</item>
+        <item>Sarajevo</item>
+        <item>Seoul</item>
+        <item>Singapore</item>
+        <item>Skopje</item>
+        <item>Sofia</item>
+        <item>Sri Jayawardenapura-Kotte</item>
+        <item>"St. George's"</item>
+        <item>St. Helier</item>
+        <item>"St. John's"</item>
+        <item>St. Peter Port</item>
+        <item>St. Pierre</item>
+        <item>Stanley</item>
+        <item>Stockholm</item>
+        <item>Sucre</item>
+        <item>Taipei</item>
+        <item>Tallinn</item>
+        <item>Tarawa</item>
+        <item>Tashkent</item>
+        <item>Tbilisi</item>
+        <item>Thimphu</item>
+        <item>Tirana</item>
+        <item>Tokyo</item>
+        <item>Torshavn</item>
+        <item>Tripoli</item>
+        <item>Tunis</item>
+        <item>Ulan Bator</item>
+        <item>Vaduz</item>
+        <item>Valletta</item>
+        <item>The Valley</item>
+        <item>Vatican City</item>
+        <item>Victoria</item>
+        <item>Vienna</item>
+        <item>Vientiane</item>
+        <item>Vilnius</item>
+        <item>Warsaw</item>
+        <item>Washington, D.C.</item>
+        <item>Wellington</item>
+        <item>West Island</item>
+        <item>Willemstad</item>
+        <item>Windhoek</item>
+        <item>Yamoussoukro</item>
+        <item>Yaounde</item>
+        <item>Yaren</item>
+        <item>Yerevan</item>
+        <item>Ecuador</item>
+        <item>Novosibirsk</item>
+        <item>Kaliningrad</item>
+        <item>Asuncion</item>
+        <item>La Paz</item>
+    </string-array>
+    <string-array name="timezone_values_new">
+        <item>Pacific/Midway</item>
+        <item>Pacific/Honolulu</item>
+        <item>America/Anchorage</item>
+        <item>America/Los_Angeles</item>
+        <item>America/Tijuana</item>
+        <item>America/Phoenix</item>
+        <item>America/Chihuahua</item>
+        <item>America/Denver</item>
+        <item>America/Costa_Rica</item>
+        <item>America/Chicago</item>
+        <item>America/Regina</item>
+        <item>America/New_York</item>
+        <item>America/Caracas</item>
+        <item>America/Barbados</item>
+        <item>America/Halifax</item>
+        <item>America/Manaus</item>
+        <item>America/St_Johns</item>
+        <item>Atlantic/South_Georgia</item>
+        <item>Atlantic/Azores</item>
+        <item>Atlantic/Cape_Verde</item>
+        <item>Africa/Casablanca</item>
+        <item>Africa/Brazzaville</item>
+        <item>Asia/Amman</item>
+        <item>Europe/Athens</item>
+        <item>Asia/Beirut</item>
+        <item>Asia/Tehran</item>
+        <item>Asia/Oral</item>
+        <item>Asia/Yekaterinburg</item>
+        <item>Asia/Calcutta</item>
+        <item>Asia/Katmandu</item>
+        <item>Asia/Rangoon</item>
+        <item>Asia/Krasnoyarsk</item>
+        <item>Asia/Bangkok</item>
+        <item>Asia/Hong_Kong</item>
+        <item>Asia/Irkutsk</item>
+        <item>Australia/Perth</item>
+        <item>Asia/Tokyo</item>
+        <item>Asia/Yakutsk</item>
+        <item>Australia/Adelaide</item>
+        <item>Australia/Darwin</item>
+        <item>Australia/Brisbane</item>
+        <item>Australia/Hobart</item>
+        <item>Australia/Sydney</item>
+        <item>Asia/Vladivostok</item>
+        <item>Asia/Magadan</item>
+        <item>Pacific/Auckland</item>
+        <item>Pacific/Fiji</item>
+        <item>America/Asuncion</item>
+        <item>Asia/Dubai</item>
+        <item>Africa/Lagos</item>
+        <item>Africa/Accra</item>
+        <item>Pacific/Pitcairn</item>
+        <item>Africa/Addis_Ababa</item>
+        <item>Africa/Algiers</item>
+        <item>Pacific/Niue</item>
+        <item>Europe/Amsterdam</item>
+        <item>Europe/Andorra</item>
+        <item>Europe/Istanbul</item>
+        <item>Indian/Antananarivo</item>
+        <item>Asia/Ashgabat</item>
+        <item>Africa/Asmara</item>
+        <item>Asia/Almaty</item>
+        <item>Europe/Athens</item>
+        <item>Pacific/Rarotonga</item>
+        <item>Asia/Baghdad</item>
+        <item>Asia/Baku</item>
+        <item>Africa/Bamako</item>
+        <item>Asia/Brunei</item>
+        <item>Europe/Zagreb</item>
+        <item>Africa/Bangui</item>
+        <item>Africa/Banjul</item>
+        <item>America/St_Kitts</item>
+        <item>Asia/Shanghai</item>
+        <item>Europe/Belfast</item>
+        <item>Europe/Belgrade</item>
+        <item>America/Belize</item>
+        <item>Europe/Berlin</item>
+        <item>Europe/Zurich</item>
+        <item>Asia/Bishkek</item>
+        <item>Africa/Bissau</item>
+        <item>America/Bogota</item>
+        <item>America/Noronha</item>
+        <item>Europe/Bratislava</item>
+        <item>Africa/Brazzaville</item>
+        <item>America/Barbados</item>
+        <item>Europe/Brussels</item>
+        <item>Europe/Bucharest</item>
+        <item>Europe/Budapest</item>
+        <item>America/Argentina/Buenos_Aires</item>
+        <item>Africa/Bujumbura</item>
+        <item>Africa/Cairo</item>
+        <item>Australia/Canberra</item>
+        <item>Africa/Bangui</item>
+        <item>America/St_Lucia</item>
+        <item>America/Cayenne</item>
+        <item>America/St_Thomas</item>
+        <item>Europe/Chisinau</item>
+        <item>America/Grand_Turk</item>
+        <item>Africa/Conakry</item>
+        <item>Europe/Copenhagen</item>
+        <item>Africa/Dakar</item>
+        <item>Asia/Dhaka</item>
+        <item>Asia/Dili</item>
+        <item>Africa/Djibouti</item>
+        <item>Africa/Dar_es_Salaam</item>
+        <item>Asia/Qatar</item>
+        <item>Europe/Isle_of_Man</item>
+        <item>Asia/Dubai</item>
+        <item>Europe/Dublin</item>
+        <item>Asia/Dushanbe</item>
+        <item>Africa/El_Aaiun</item>
+        <item>Atlantic/St_Helena</item>
+        <item>Indian/Christmas</item>
+        <item>Africa/Freetown</item>
+        <item>Pacific/Funafuti</item>
+        <item>Africa/Gaborone</item>
+        <item>America/Cayman</item>
+        <item>Atlantic/St_Helena</item>
+        <item>America/Guyana</item>
+        <item>Europe/Gibraltar</item>
+        <item>Atlantic/South_Georgia</item>
+        <item>America/Guatemala</item>
+        <item>Atlantic/Bermuda</item>
+        <item>Pacific/Guam</item>
+        <item>Atlantic/Bermuda</item>
+        <item>Pacific/Galapagos</item>
+        <item>Asia/Ho_Chi_Minh</item>
+        <item>Africa/Harare</item>
+        <item>America/Havana</item>
+        <item>Europe/Helsinki</item>
+        <item>Pacific/Guadalcanal</item>
+        <item>Asia/Karachi</item>
+        <item>Asia/Jakarta</item>
+        <item>Atlantic/St_Helena</item>
+        <item>Asia/Jerusalem</item>
+        <item>Africa/Juba</item>
+        <item>Asia/Kabul</item>
+        <item>Africa/Kampala</item>
+        <item>Asia/Karachi</item>
+        <item>Pacific/Apia</item>
+        <item>Africa/Khartoum</item>
+        <item>Europe/Kiev</item>
+        <item>Africa/Kigali</item>
+        <item>America/Jamaica</item>
+        <item>Pacific/Norfolk</item>
+        <item>America/St_Vincent</item>
+        <item>Africa/Kinshasa</item>
+        <item>Asia/Kuala_Lumpur</item>
+        <item>Asia/Kuwait</item>
+        <item>Africa/Libreville</item>
+        <item>Africa/Blantyre</item>
+        <item>America/Lima</item>
+        <item>Europe/Lisbon</item>
+        <item>Europe/Ljubljana</item>
+        <item>Africa/Lome</item>
+        <item>Europe/London</item>
+        <item>Africa/Luanda</item>
+        <item>Africa/Lusaka</item>
+        <item>Europe/Luxembourg</item>
+        <item>Europe/Madrid</item>
+        <item>Pacific/Majuro</item>
+        <item>Africa/Malabo</item>
+        <item>Indian/Maldives</item>
+        <item>America/Managua</item>
+        <item>Asia/Bahrain</item>
+        <item>Asia/Manila</item>
+        <item>Africa/Maputo</item>
+        <item>America/Marigot</item>
+        <item>Africa/Maseru</item>
+        <item>Pacific/Wallis</item>
+        <item>Africa/Mbabane</item>
+        <item>Pacific/Palau</item>
+        <item>America/Monterrey</item>
+        <item>Europe/Minsk</item>
+        <item>Africa/Mogadishu</item>
+        <item>Europe/Monaco</item>
+        <item>Africa/Monrovia</item>
+        <item>America/Montevideo</item>
+        <item>Indian/Comoro</item>
+        <item>Europe/Moscow</item>
+        <item>Asia/Muscat</item>
+        <item>Africa/Nairobi</item>
+        <item>America/Nassau</item>
+        <item>Asia/Rangoon</item>
+        <item>Africa/Ndjamena</item>
+        <item>Asia/Kolkata</item>
+        <item>Africa/Niamey</item>
+        <item>Asia/Nicosia</item>
+        <item>Africa/Nouakchott</item>
+        <item>Pacific/Noumea</item>
+        <item>Pacific/Tongatapu</item>
+        <item>America/Godthab</item>
+        <item>America/Aruba</item>
+        <item>Europe/Oslo</item>
+        <item>America/Toronto</item>
+        <item>Africa/Ouagadougou</item>
+        <item>Pacific/Pago_Pago</item>
+        <item>Pacific/Pohnpei</item>
+        <item>America/Panama</item>
+        <item>Pacific/Tahiti</item>
+        <item>America/Paramaribo</item>
+        <item>Europe/Paris</item>
+        <item>America/Lower_Princes</item>
+        <item>Asia/Phnom_Penh</item>
+        <item>America/Montserrat</item>
+        <item>Europe/Podgorica</item>
+        <item>Indian/Mauritius</item>
+        <item>Pacific/Port_Moresby</item>
+        <item>Pacific/Efate</item>
+        <item>America/Port-au-Prince</item>
+        <item>America/Port_of_Spain</item>
+        <item>Africa/Porto-Novo</item>
+        <item>Europe/Prague</item>
+        <item>Atlantic/Cape_Verde</item>
+        <item>Africa/Johannesburg</item>
+        <item>Europe/Tirane</item>
+        <item>Asia/Pyongyang</item>
+        <item>America/Guayaquil</item>
+        <item>Africa/Casablanca</item>
+        <item>Atlantic/Reykjavik</item>
+        <item>Europe/Riga</item>
+        <item>Asia/Riyadh</item>
+        <item>America/Tortola</item>
+        <item>Europe/Rome</item>
+        <item>America/Dominica</item>
+        <item>Pacific/Saipan</item>
+        <item>America/Costa_Rica</item>
+        <item>America/Puerto_Rico</item>
+        <item>Europe/San_Marino</item>
+        <item>America/El_Salvador</item>
+        <item>Asia/Aden</item>
+        <item>America/Santiago</item>
+        <item>America/Santo_Domingo</item>
+        <item>Africa/Sao_Tome</item>
+        <item>Europe/Sarajevo</item>
+        <item>Asia/Seoul</item>
+        <item>Asia/Singapore</item>
+        <item>Europe/Skopje</item>
+        <item>Europe/Sofia</item>
+        <item>Asia/Colombo</item>
+        <item>America/Grenada</item>
+        <item>Europe/Jersey</item>
+        <item>America/Antigua</item>
+        <item>Europe/Guernsey</item>
+        <item>America/Miquelon</item>
+        <item>Atlantic/Stanley</item>
+        <item>Europe/Stockholm</item>
+        <item>America/La_Paz</item>
+        <item>Asia/Taipei</item>
+        <item>Europe/Tallinn</item>
+        <item>Pacific/Tarawa</item>
+        <item>Asia/Tashkent</item>
+        <item>Asia/Tbilisi</item>
+        <item>Asia/Thimphu</item>
+        <item>Europe/Tirane</item>
+        <item>Asia/Tokyo</item>
+        <item>Atlantic/Faroe</item>
+        <item>Africa/Tripoli</item>
+        <item>Africa/Tunis</item>
+        <item>Asia/Ulaanbaatar</item>
+        <item>Europe/Vaduz</item>
+        <item>Europe/Malta</item>
+        <item>America/Anguilla</item>
+        <item>Europe/Vatican</item>
+        <item>Indian/Mahe</item>
+        <item>Europe/Vienna</item>
+        <item>Asia/Vientiane</item>
+        <item>Europe/Vilnius</item>
+        <item>Europe/Warsaw</item>
+        <item>America/New_York</item>
+        <item>Pacific/Auckland</item>
+        <item>Indian/Cocos</item>
+        <item>America/Curacao</item>
+        <item>Africa/Windhoek</item>
+        <item>Africa/Abidjan</item>
+        <item>Africa/Douala</item>
+        <item>Pacific/Nauru</item>
+        <item>Asia/Yerevan</item>
+        <item>America/La_Paz</item>
+        <item>Asia/Novosibirsk</item>
+        <item>Europe/Kaliningrad</item>
+        <item>America/Asuncion</item>
+        <item>America/La_Paz</item>
+    </string-array>
+    <string-array name="hide_app">
+        <item>com.jrdcom.lockscreen</item>
+    </string-array>
+    <string-array name="screen_off_entries">
+        <item>Old TV</item>
+        <item>Fade out</item>
+    </string-array>
+    <string-array name="screen_off_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="gemini_sim_info_number_display_format_entries">
+        <item>First 4 digits</item>
+        <item>Last 4 digits</item>
+        <item>Do not display</item>
+    </string-array>
+    <string-array name="gemini_sim_info_number_display_format_values">
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="gemini_sim_roaming_reminder_entries">
+        <item>Once</item>
+        <item>Always</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="gemini_sim_roaming_reminder_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="gsm_umts_network_preferences_choices">
+        <item>GSM / WCDMA auto</item>
+        <item>WCDMA only</item>
+        <item>GSM only</item>
+    </string-array>
+    <string-array name="gsm_umts_network_preferences_values">
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <array name="wifi_security_wfa">
+        <item>@string/wifi_security_none</item>
+        <item>WEP</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI Certificate</item>
+    </array>
+    <string-array name="wifi_ap_channel_width">
+        <item>20 MHz</item>
+        <item>Auto 20/40 MHz</item>
+    </string-array>
+    <array name="wpa_security">
+        <item>@string/wifi_security_none</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+    </array>
+    <array name="wpa_security_wfa">
+        <item>@string/wifi_security_none</item>
+        <item>WEP</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+        <item>802.1x EAP</item>
+    </array>
+    <array name="wapi_security">
+        <item>@string/wifi_security_none</item>
+        <item>WAPI PSK</item>
+        <item>WAPI Certificate</item>
+    </array>
+    <string-array name="auto_time_entries">
+        <item>Use network provided time</item>
+        <item>Use GPS provided time</item>
+        <item>Off</item>
+    </string-array>
+    <string-array name="tvout_system_list">
+        <item>PAL</item>
+        <item>NTSC</item>
+    </string-array>
+    <string-array name="apn_type_generic">
+        <item>default</item>
+        <item>mms</item>
+        <item>supl</item>
+        <item>wap</item>
+    </string-array>
+    <string-array name="wifi_eap_method_sim_aka">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+        <item>SIM</item>
+        <item>AKA</item>
+    </string-array>
+    <string-array name="sim_slot">
+        <item>(unspecified)</item>
+        <item>SIM slot 1</item>
+        <item>SIM slot 2</item>
+    </string-array>
+    <string-array name="wifi_hotspot_disable_policy_entries">
+        <item>Always</item>
+        <item>Turn off when idle for 5 minutes</item>
+        <item>Turn off when idle for 10 minutes</item>
+    </string-array>
+    <string-array name="wifi_hotspot_disable_policy_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="hdmi_video_resolution_entries">
+        <item>480p</item>
+        <item>576p</item>
+        <item>720p_60Hz</item>
+        <item>720p_50Hz</item>
+        <item>1080i_60Hz</item>
+        <item>1080i_50Hz</item>
+        <item>1080p_30Hz</item>
+        <item>1080p_25Hz</item>
+        <item>1080p_24Hz</item>
+        <item>1080p_23Hz</item>
+        <item>1080p_29Hz</item>
+        <item>1080p_60Hz</item>
+        <item>1080p_50Hz</item>
+        <item>720p3d_60Hz</item>
+        <item>720p3d_50Hz</item>
+        <item>1080i3d_60Hz</item>
+        <item>1080i3d_50Hz</item>
+        <item>1080p3d_24Hz</item>
+        <item>1080p3d_23Hz</item>
+    </string-array>
+    <string-array name="hdmi_video_resolution_entry_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+    </string-array>
+    <string-array name="hdmi_video_mode_entries">
+        <item>Full screen</item>
+        <item>Best fit</item>
+        <item>Original size</item>
+    </string-array>
+    <string-array name="hdmi_video_mode_entry_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="hdmi_color_space_entries">
+        <item>RGB</item>
+        <item>YCbCr444</item>
+        <item>YCbCr422</item>
+    </string-array>
+    <string-array name="hdmi_color_space_entry_values">
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="hdmi_deep_color_entries">
+        <item>8bit</item>
+        <item>Auto</item>
+        <item>10 bit</item>
+        <item>12 bit</item>
+    </string-array>
+    <string-array name="hdmi_deep_color_entry_values">
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="wifi_WEP_index">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="wifi_WEP_security_type">
+        <item>Auto</item>
+        <item>WEP ASCII</item>
+        <item>WEP hexadecimal</item>
+    </string-array>
+    <string-array name="tethered_ipv6_entries">
+        <item>IPv4</item>
+        <item>IPv4 &amp;amp; IPv6</item>
+    </string-array>
+    <string-array name="tethered_ipv6_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="usb_tether_type_entries">
+        <item>Windows(RNDIS)</item>
+        <item>Linux/Mac OS(EEM)</item>
+    </string-array>
+    <string-array name="usb_tether_type_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="wifi_ap_wps_mode_entries">
+        <item>Push button</item>
+        <item>PIN from peer device</item>
+    </string-array>
+    <string-array name="wifi_ap_wps_mode_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="wifi_ap_max_connection_entries">
+        <item>1 user</item>
+        <item>2 users</item>
+        <item>3 users</item>
+        <item>4 users</item>
+        <item>5 users</item>
+        <item>6 users</item>
+        <item>7 users</item>
+        <item>8 users</item>
+    </string-array>
+    <string-array name="wifi_ap_max_connection_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="mouse_primary_button_titles">
+        <item>Right-hand mouse</item>
+        <item>Left-hand mouse</item>
+    </string-array>
+    <string-array name="mouse_primary_button_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <array name="usb_sharing_pc_system_entry">
+        <item>@string/wifi_unspecified</item>
+        <item>Windows XP</item>
+        <item>Windows Vista</item>
+        <item>Windows 7</item>
+        <item>Windows 8</item>
+    </array>
+    <string-array name="wfd_720p_resolution_entry">
+        <item>720p (60 frames/sec)</item>
+        <item>720p (30 frames/sec)</item>
+    </string-array>
+    <string-array name="wfd_1080p_resolution_entry">
+        <item>1080p (30 frames/sec)</item>
+        <item>720p (60 frames/sec)</item>
+        <item>720p (30 frames/sec)</item>
+    </string-array>
+    <string-array name="passpoint_eap_method">
+        <item>EAP-TTLS/</item>
+        <item>EAP-SIM/</item>
+        <item>EAP-TLS/</item>
+    </string-array>
+    <array name="passpoint_credential_type">
+        <item>@string/passpoint_username_pw</item>
+        <item>SIM</item>
+        <item>@string/passpoint_certificate</item>
+    </array>
+    <string-array name="wifi_hotspot_select_band_array">
+        <item>2.4 GHz only</item>
+        <item>5 GHz only</item>
+        <item>2.4 GHz or 5 GHz</item>
+    </string-array>
+    <string-array name="wifi_hotspot_select_band_entry">
+        <item>2400</item>
+        <item>5000</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="image_list">
+        <item>img_preview1</item>
+        <item>img_preview2</item>
+        <item>img_preview3</item>
+    </string-array>
+</resources>

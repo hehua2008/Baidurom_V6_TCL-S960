@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.system" android:versionCode="17" android:versionName="4.2.2-vB5A-0" package="com.android.jrdsettings" coreApp="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <original-package android:name="com.android.jrdsettings" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.HARDWARE_TEST" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIMAX_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIMAX_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOVE_PACKAGE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.BACKUP" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.MANAGE_USB" />
+    <uses-permission android:name="android.permission.SET_POINTER_SPEED" />
+    <uses-permission android:name="android.permission.SET_KEYBOARD_LAYOUT" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.COPY_PROTECTED_DATA" />
+    <uses-permission android:name="android.permission.MANAGE_USERS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.CONFIGURE_WIFI_DISPLAY" />
+    <uses-permission android:name="android.permission.SET_TIME" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <permission android:name="com.android.jrdsettings.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.android.jrdsettings.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.jrd.permission.SWITCH_JRDTHEME" />
+    <application android:theme="@*android:style/Theme.Holo.Jrd.Light" android:label="@string/settings_label" android:icon="@mipmap/ic_launcher_settings" android:taskAffinity="" android:hardwareAccelerated="true" android:uiOptions="splitActionBarWhenNarrow" android:supportsRtl="true">
+        <uses-library android:name="com.tcl.audiobeaming" />
+        <activity android:label="@string/settings_label_launcher" android:name="Settings" android:taskAffinity="com.android.jrdsettings" android:launchMode="singleTask" android:configChanges="mcc|mnc|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.APP_SETTINGS" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SubSettings" android:taskAffinity="com.android.jrdsettings" android:configChanges="mcc|mnc|keyboardHidden|orientation|screenSize" android:parentActivityName="Settings" />
+        <activity android:label="@string/powersaver_whitelist_title" android:name=".powersaver.JrdAppPicker" />
+        <activity android:name=".powersaver.JrdPowerSaveSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".powersaver.JrdBatteryReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/Theme.CreateShortCut" android:label="@string/settings_shortcut" android:name="CreateShortcut">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.android.jrdsettings.MultiShareReceiver">
+            <intent-filter>
+                <action android:name="com.intent.START_AUDIO_SHARE" />
+                <action android:name="com.intent.STOP_AUDIO_SHARE" />
+                <action android:name="com.intent.START_MULTI_SCREEN" />
+                <action android:name="com.intent.STOP_MULTI_SCREEN" />
+                <action android:name="com.intent.START_WIFI_DISPLAY" />
+                <action android:name="com.intent.STOP_WIFI_DISPLAY" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/audio_share_help" android:name="com.android.jrdsettings.audioshare.AudioShareHelp" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:parentActivityName="Settings$AudioShareSettingsActivity" />
+        <service android:name=".audioshare.service.AudioShareService">
+            <intent-filter>
+                <action android:name="com.android.jrdsettings.audioshare.service.AudioShareService" />
+            </intent-filter>
+        </service>
+        <activity android:label="@string/audioshare_title" android:name="Settings$AudioShareSettingsActivity" android:taskAffinity="" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize" android:parentActivityName="Settings$WirelessSettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.tcl.audioshare" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="com.android.jrdsettings.SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.audioshare.AudioShareSettings" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/audioshare_settings" />
+        </activity>
+        <activity-alias android:label="@string/audioshare_title" android:name="Settings$AudioShareSettings" android:exported="true" android:clearTaskOnLaunch="true" android:targetActivity="Settings$AudioShareSettingsActivity">
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.audioshare.AudioShareSettings" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/audioshare_settings" />
+        </activity-alias>
+        <activity android:label="@string/hifi_switch_title" android:name="Settings$HifiSettingsActivity" android:clearTaskOnLaunch="true" android:configChanges="orientation|screenSize" android:parentActivityName="Settings$SoundSettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.hifi.HifiSettings" />
+        </activity>
+        <activity-alias android:label="@string/hifi_switch_title" android:name="com.android.jrdsettings.hifi.HifiSettings" android:exported="true" android:clearTaskOnLaunch="true" android:targetActivity="Settings$HifiSettingsActivity">
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.hifi.HifiSettings" />
+        </activity-alias>
+        <activity android:label="@string/date_and_time" android:name="Settings$DateTimeSettingsActivity" android:taskAffinity="" android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.QUICK_CLOCK" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.DateTimeSettings" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/date_time_settings" />
+        </activity>
+        <activity android:label="@string/audio_profile_settings_title" android:name="Settings$AudioProfileSettingsActivity" android:clearTaskOnLaunch="true" android:configChanges="mcc|mnc|keyboardHidden|orientation|screenSize" android:parentActivityName="Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.android.jrdsettings.SOUND_SETTINGS" />
+                <action android:name="android.settings.SOUND_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="com.android.jrdsettings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.mediatek.audioprofile.AudioProfileSettings" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/sound_settings" />
+        </activity>
+        <activity android:label="@string/sound_settings" android:name="Settings$SoundSettingsActivity" android:taskAffinity="" android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.android.jrdsettings.SOUND_SETTINGS" />
+                <action android:name="android.settings.SOUND_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="com.android.jrdsettings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.SoundSettings" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/sound_settings" />
+        </activity>
+        <activity-alias android:label="@string/sound_settings" android:name="SoundSettings" android:exported="true" android:targetActivity="Settings$SoundSettingsActivity">
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.SoundSettings" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/sound_settings" />
+        </activity-alias>
+        <activity android:label="@string/display_settings" android:name="Settings$DisplaySettingsActivity" android:taskAffinity="" android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.android.jrdsettings.DISPLAY_SETTINGS" />
+                <action android:name="android.settings.DISPLAY_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="com.android.jrdsettings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.DisplaySettings" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/display_settings" />
+        </activity>
+        <activity-alias android:label="@string/display_settings" android:name="DisplaySettings" android:exported="true" android:targetActivity="Settings$DisplaySettingsActivity">
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.DisplaySettings" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/display_settings" />
+        </activity-alias>
+        <activity android:theme="@*android:style/Theme.Holo.DialogWhenLarge" android:label="@string/device_info_settings" android:name="Settings$DeviceInfoSettingsActivity" android:taskAffinity="com.android.jrdsettings" android:parentActivityName="Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+            </intent-filter>
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.DeviceInfoSettings" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/about_settings" />
+        </activity>
+        <activity android:label="@string/settings_license_activity_title" android:name="SettingsLicenseActivity" android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo.Dialog.Alert" android:label="@string/settings_safetylegal_activity_title" android:name="SettingsSafetyLegalActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent" android:name=".LowMemoryStorage" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.android.jrdsettings.LowMemoryStorage" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/privacy_settings_title" android:name="Settings$PrivacySettingsActivity" android:taskAffinity="com.android.jrdsettings" android:configChanges="keyboardHidden|orientation|screenSize" android:parentActivityName="Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+            </intent-filter>
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.PrivacySettings" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/privacy_settings" />
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo.DialogWhenLarge" android:name="SetFullBackupPassword" android:exported="false" />
+        <activity android:theme="@style/Transparent" android:name="CredentialStorage" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.android.credentials.UNLOCK" />
+                <action android:name="com.android.credentials.INSTALL" />
+                <action android:name="com.android.credentials.RESET" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo.DialogWhenLarge" android:label="@string/device_admin_add_title" android:name="DeviceAdminAdd" android:clearTaskOnLaunch="true">
+            <intent-filter>
+                <action android:name="android.app.action.ADD_DEVICE_ADMIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/accessibility_settings" android:name="Settings$AccessibilitySettingsActivity" android:taskAffinity="" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="com.android.jrdsettings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.AccessibilitySettings" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/accessibility_settings" />
+        </activity>
+        <activity android:label="@string/tts_settings" android:name="Settings$TextToSpeechSettingsActivity" android:taskAffinity="com.android.jrdsettings" android:parentActivityName="Settings$InputMethodAndLanguageSettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.android.jrdsettings.TTS_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.tts.TextToSpeechSettings" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/language_settings" />
+        </activity>
+        <activity android:name="ConfirmLockPattern" />
+        <activity android:name="ConfirmLockPassword" android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:label="@string/lockpassword_choose_lock_generic_header" android:name="ChooseLockGeneric" android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.app.action.SET_NEW_PASSWORD" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/lockpassword_choose_lock_generic_header" android:name="ChooseLockGeneric$InternalActivity" android:exported="false" android:excludeFromRecents="true" />
+        <activity android:name="ChooseLockPattern" android:exported="false" />
+        <activity android:name="ChooseLockPassword" android:exported="false" android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:theme="@*android:style/Theme.Holo.DialogWhenLarge" android:label="@string/device_status_activity_title" android:name=".deviceinfo.Status" android:process="com.android.phone">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/device_status_activity_title" android:name="com.mediatek.settings.deviceinfo.StatusGemini" android:process="com.android.phone" android:parentActivityName="Settings$DeviceInfoSettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/software_updates_more_title" android:name="com.mediatek.settings.deviceinfo.SoftwareUpdates" android:parentActivityName="Settings$DeviceInfoSettingsActivity" />
+        <activity android:label="@string/slot_status_title" android:name="com.mediatek.settings.deviceinfo.ImeiInfoGemini" android:process="com.android.phone" android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/storage_settings_title" android:name="Settings$StorageSettingsActivity" android:taskAffinity="com.android.jrdsettings" android:uiOptions="none" android:parentActivityName="Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+            </intent-filter>
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.deviceinfo.Memory" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/storage_settings" />
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo.DialogWhenLarge" android:name=".deviceinfo.MiscFilesHandler" />
+        <activity android:label="@string/media_format_title" android:name="MediaFormat" android:configChanges="mcc|mnc|keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/quick_launch_title" android:name=".quicklaunch.QuickLaunchSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.android.jrdsettings.QUICK_LAUNCH_SETTINGS" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/quick_launch_title" android:name=".quicklaunch.BookmarkPicker">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/development_settings_title" android:name="Settings$DevelopmentSettingsActivity" android:clearTaskOnLaunch="true" android:parentActivityName="Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.android.jrdsettings.APPLICATION_DEVELOPMENT_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.DevelopmentSettings" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/development_settings" />
+        </activity>
+        <activity-alias android:label="@string/development_settings_title" android:name="DevelopmentSettings" android:exported="true" android:targetActivity="Settings$DevelopmentSettingsActivity">
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.DevelopmentSettings" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/development_settings" />
+        </activity-alias>
+        <activity android:theme="@*android:style/Theme.Holo.Dialog" android:label="@string/select_application" android:name=".AppPicker" />
+        <activity android:label="@string/storage_title_usb" android:name="Settings$UsbSettingsActivity" android:taskAffinity="com.android.jrdsettings" android:parentActivityName="Settings$StorageSettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.android.jrdsettings.STORAGE_USB_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.deviceinfo.UsbSettings" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/storage_settings" />
+            <meta-data android:name="com.android.jrdsettings.PARENT_FRAGMENT_TITLE" android:resource="@string/storage_settings_title" />
+            <meta-data android:name="com.android.jrdsettings.PARENT_FRAGMENT_CLASS" android:value="com.android.jrdsettings.Settings$StorageSettingsActivity" />
+        </activity>
+        <activity-alias android:label="@string/storage_title_usb" android:name="UsbSettings" android:exported="true" android:targetActivity="Settings$DevelopmentSettingsActivity">
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.deviceinfo.UsbSettings" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/storage_settings" />
+            <meta-data android:name="com.android.jrdsettings.PARENT_FRAGMENT_TITLE" android:resource="@string/storage_settings_title" />
+            <meta-data android:name="com.android.jrdsettings.PARENT_FRAGMENT_CLASS" android:value="com.android.jrdsettings.Settings$StorageSettingsActivity" />
+        </activity-alias>
+        <activity android:label="@string/nfc_quick_toggle_title" android:name="Settings$NfcSettingsActivity" android:clearTaskOnLaunch="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="mediatek.settings.NFC_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.mediatek.nfc.NfcSettings" />
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo.Dialog.Alert" android:label="@string/nfc_card_emulation" android:name="com.mediatek.nfc.SwitchErrorActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.nfc.action.SWITCH_FAIL_DIALOG_REQUEST" />
+                <action android:name="android.nfc.action.NOT_NFC_SIM_DIALOG_REQUEST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Dialog.Alert" android:label="@string/activity_picker_label" android:name="ActivityPicker" android:finishOnCloseSystemDialogs="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/debug_intent_sender_label" android:name="DebugIntentSender">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEVELOPMENT_PREFERENCE" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".DeviceInfo$StatsReportReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.STATISTICS_REPORT" />
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/battery_info_label" android:name="BatteryInfo" android:taskAffinity="com.android.jrdsettings" android:parentActivityName="Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEVELOPMENT_PREFERENCE" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/display_label" android:name="Display" android:taskAffinity="com.android.jrdsettings" android:configChanges="fontScale" android:parentActivityName="Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEVELOPMENT_PREFERENCE" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/phone_info_label" android:name="RadioInfo" android:process="com.android.phone">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEVELOPMENT_PREFERENCE" />
+            </intent-filter>
+        </activity>
+        <activity-alias android:label="@string/proxy_settings_label" android:name="ProxySelector" android:targetActivity="Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+            </intent-filter>
+        </activity-alias>
+        <activity android:theme="@*android:style/Theme.Dialog" android:name="BandMode" android:process="com.android.phone">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/testing" android:name="TestingSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="TestingSettingsBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SECRET_CODE" />
+                <data android:scheme="android_secret_code" android:host="4636" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@*android:style/Theme.Holo.Dialog.Alert" android:label="@string/widget_picker_title" android:name="AppWidgetPickActivity" android:finishOnCloseSystemDialogs="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo.Dialog.Alert" android:name="AllowBindAppWidgetActivity" android:excludeFromRecents="true" android:finishOnCloseSystemDialogs="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_BIND" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo.Wallpaper.NoTitleBar" android:label="@string/widget_picker_title" android:name="KeyguardAppWidgetPickActivity" android:permission="android.permission.BIND_KEYGUARD_APPWIDGET" android:finishOnCloseSystemDialogs="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.KEYGUARD_APPWIDGET_PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/usage_stats_label" android:name="UsageStats" android:taskAffinity="com.android.jrdsettings" android:parentActivityName="Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEVELOPMENT_PREFERENCE" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/power_usage_summary_title" android:name="Settings$PowerUsageSummaryActivity" android:taskAffinity="" android:excludeFromRecents="true" android:uiOptions="none">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.POWER_USAGE_SUMMARY" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.android.jrdsettings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.fuelgauge.PowerUsageSummary" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/battery_settings" />
+        </activity>
+        <activity-alias android:label="@string/power_usage_summary_title" android:name=".fuelgauge.PowerUsageSummary" android:exported="true" android:targetActivity="Settings$PowerUsageSummaryActivity">
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.fuelgauge.PowerUsageSummary" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/battery_settings" />
+        </activity-alias>
+        <activity android:label="@string/data_usage_summary_title" android:name="Settings$DataUsageSummaryActivity" android:taskAffinity="" android:excludeFromRecents="true" android:configChanges="mcc|mnc|keyboardHidden|orientation|screenSize" android:uiOptions="none">>
+<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.android.jrdsettings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.DataUsageSummary" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/data_usage_settings" />
+        </activity>
+        <activity android:label="@string/screensaver_settings_title" android:name="Settings$DreamSettingsActivity" android:taskAffinity="" android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.android.jrdsettings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.android.jrdsettings.DreamSettings" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/display_settings" />
+        </activity>
+        <receiver android:name=".users.ProfileUpdateReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Contacts.PROFILE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.mediatek.lbs.LbsReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="com.mediatek.agps.OMACP_UPDATED" />
+                <action android:name="com.mediatek.omacp.capability" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mediatek.omacp.settings" />
+                <data android:mimeType="application/com.mediatek.omacp-ap0004" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.mediatek.lbs.AgpsNotifyDialog" android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/hdmi_settings" android:name="Settings$HDMISettingsActivity" android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.mediatek.hdmi.HDMISettings" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/display_settings" />
+            <meta-data android:name="com.android.jrdsettings.PARENT_FRAGMENT_TITLE" android:resource="@string/display_settings" />
+            <meta-data android:name="com.android.jrdsettings.PARENT_FRAGMENT_CLASS" android:value="com.android.jrdsettings.Settings$DisplaySettingsActivity" />
+        </activity>
+        <activity-alias android:label="@string/hdmi_settings" android:name=".HDMISettings" android:exported="true" android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize" android:targetActivity="Settings$HDMISettingsActivity">
+            <meta-data android:name="com.android.jrdsettings.FRAGMENT_CLASS" android:value="com.mediatek.hdmi.HDMISettings" />
+            <meta-data android:name="com.android.jrdsettings.TOP_LEVEL_HEADER_ID" android:resource="@id/display_settings" />
+            <meta-data android:name="com.android.jrdsettings.PARENT_FRAGMENT_TITLE" android:resource="@string/display_settings" />
+            <meta-data android:name="com.android.jrdsettings.PARENT_FRAGMENT_CLASS" android:value="com.android.jrdsettings.Settings$DisplaySettingsActivity" />
+        </activity-alias>
+        <receiver android:name="com.mediatek.settings.RestoreRotationReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.ACTION_BOOT_IPO" />
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.mediatek.thememanager.ThemeProvider" android:authorities="com.mediatek.thememanager.ThemeProvider" />
+        <receiver android:name="com.mediatek.thememanager.ThemeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.mediatek.beam.BeamShareProvider" android:exported="true" android:authorities="com.android.jrdsettings.provider.beam.share" />
+        <activity android:label="@string/lock_settings_picker_title" android:name="com.mediatek.lockscreensettings.LockScreenStyleSettings" android:screenOrientation="portrait" android:hardwareAccelerated="false" android:parentActivityName="Settings" />
+        <receiver android:name="com.mediatek.upgradeforschepower.UpgradeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PRE_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@*android:style/Theme.Holo.Wallpaper.NoTitleBar" android:label="@string/widget_picker_title" android:name=".KeyguardWidgetEditActivity" android:permission="android.permission.BIND_KEYGUARD_APPWIDGET" android:finishOnCloseSystemDialogs="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.KEYGUARD_APPWIDGET_EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo.Wallpaper.NoTitleBar" android:label="@string/widget_picker_title" android:name=".KeyguardWidgetOrderActivity" android:permission="android.permission.BIND_KEYGUARD_APPWIDGET" android:finishOnCloseSystemDialogs="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.KEYGUARD_APPWIDGET_ORDER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.android.jrdsettings.ringIncreasing.IncomingCallListener" android:permission="android.permission.READ_PHONE_STATE">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.mediatek.audioprofile.InitAudioProfileReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/remote_security" android:key="security_category">
+        <com.android.jrdsettings.remotesecurity.RemoteSecuritySwitchPreference android:title="@string/remote_security" android:key="remote_security" android:summary="@string/rs_summary" android:fragment="com.android.jrdsettings.remotesecurity.RemoteSecuritySettings" />
+    </PreferenceCategory>
+</PreferenceScreen>

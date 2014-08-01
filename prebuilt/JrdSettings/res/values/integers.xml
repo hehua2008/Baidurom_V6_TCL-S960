@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="maximum_user_dictionary_word_length">48</integer>
+    <integer name="keyguard_appwidget_picker_cols">2</integer>
+    <integer name="def_settings_dataUsage_forceStopthreshold">1024</integer>
+</resources>

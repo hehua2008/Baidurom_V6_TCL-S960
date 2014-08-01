@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:gravity="center" android:id="@id/app_grid" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:horizontalSpacing="10.0dip" android:verticalSpacing="30.0dip" android:numColumns="4" />
+    <TextView android:gravity="center" android:id="@id/statusbar_info_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/statusbar_settings_info" />
+    <include android:id="@id/cling_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/statusbar_info_cling" />
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:id="@id/wireless_section" android:title="@string/header_category_wireless_networks" />
+    <header android:icon="@drawable/ic_audioshare" android:id="@id/audioshare_settings" android:title="@string/audioshare_title">
+        <intent android:action="com.tcl.audioshare" />
+    </header>
+    <header android:id="@id/device_section" android:title="@string/header_category_device" />
+    <header android:icon="@drawable/ic_settings_profiles" android:id="@id/audioprofle_settings" android:title="@string/audio_profile_settings_title" android:fragment="com.mediatek.audioprofile.AudioProfileSettings" />
+    <header android:icon="@drawable/ic_settings_sound" android:id="@id/sound_settings" android:title="@string/sound_settings" android:fragment="com.android.jrdsettings.SoundSettings" />
+    <header android:icon="@drawable/ic_settings_display" android:id="@id/display_settings" android:title="@string/display_settings" android:fragment="com.android.jrdsettings.DisplaySettings" />
+    <header android:icon="@drawable/ic_settings_storage" android:id="@id/storage_settings" android:title="@string/storage_settings" android:fragment="com.android.jrdsettings.deviceinfo.Memory" />
+    <header android:icon="@drawable/ic_settings_powersaving" android:id="@id/powersave_settings" android:title="@string/title_powersave" android:fragment="com.android.jrdsettings.powersaver.JrdPowerManger" />
+    <header android:id="@id/system_section" android:title="@string/header_category_system" />
+    <header android:icon="@drawable/ic_settings_date_time" android:id="@id/date_time_settings" android:title="@string/date_and_time_settings_title" android:fragment="com.android.jrdsettings.DateTimeSettings" />
+    <header android:icon="@drawable/ic_settings_schpwronoff" android:id="@id/power_settings" android:title="@string/schedule_power_on_off_settings_title">
+        <intent android:action="com.android.settings.SCHEDULE_POWER_ON_OFF_SETTING" />
+    </header>
+    <header android:icon="@drawable/ic_settings_development" android:id="@id/development_settings" android:title="@string/development_settings_title" android:fragment="com.android.jrdsettings.DevelopmentSettings" />
+    <header android:icon="@drawable/ic_settings_about" android:id="@id/about_settings" android:title="@string/about_settings" android:fragment="com.android.jrdsettings.DeviceInfoSettings" />
+    <header android:icon="@drawable/ic_settings_quick_boot" android:id="@id/quick_boot_settings" android:title="@string/quick_boot_settings_title" android:summary="@string/quick_boot_settings_summary" />
+</preference-headers>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/picture_quality" android:background="@*android:drawable/list_selector_holo_light" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:paddingEnd="?android:scrollbarSize">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@*android:color/black" android:id="@id/display_color_temperature" android:paddingLeft="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/display_color" android:layout_weight="1.0" />
+        <com.android.jrdsettings.ChildViewPager android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@*android:color/holo_red_dark" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/multi_settings_title" android:layout_weight="1.0" />
+    </LinearLayout>
+    <SeekBar android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/color_temp_seekbar" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-15.0dip" android:layout_marginBottom="-15.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@*android:color/black" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_warm" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@*android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_middle" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@*android:color/black" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_cool" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0sp" android:textColor="@*android:color/holo_red_dark" android:gravity="left" android:id="@id/display_color_temperature" android:paddingLeft="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/display_satur" android:layout_weight="1.0" />
+    <SeekBar android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/color_satur_seekbar" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-15.0dip" android:layout_marginBottom="-15.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@*android:color/black" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_low" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@*android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_middle" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@*android:color/black" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_high" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sound_settings" android:key="sound_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.jrdsettings">
+    <com.android.jrdsettings.hifi.HifiSwitchPreference android:title="@string/hifi_switch_title" android:key="hifi_open_settings" android:summary="@string/hifi_switch_summary" android:fragment="com.android.jrdsettings.hifi.HifiSettings" />
+    <PreferenceCategory android:title="@string/sound_category_volume_title" android:key="category_volume" />
+    <CheckBoxPreference android:title="@string/vibrate_when_ting_title" android:key="vibrate_when_ringing" />
+    <CheckBoxPreference android:title="@string/silent_mode_title" android:key="phone_silent" />
+    <com.mediatek.audioprofile.JrdVolumeSeekBarPreference android:persistent="false" android:title="@string/volume_ring_description" android:key="jrd_ring_and_notifaction" />
+    <com.mediatek.audioprofile.JrdVolumeSeekBarPreference android:persistent="false" android:title="@string/volume_notification_description" android:key="jrd_notifaction" />
+    <com.mediatek.audioprofile.JrdVolumeSeekBarPreference android:persistent="false" android:title="@string/volume_system_description" android:key="jrd_system" />
+    <com.mediatek.audioprofile.JrdVolumeSeekBarPreference android:persistent="false" android:title="@string/volume_media_description" android:key="jrd_music" />
+    <com.mediatek.audioprofile.JrdVolumeSeekBarPreference android:persistent="false" android:title="@string/volume_alarm_description" android:key="jrd_alarms" />
+    <Preference android:title="@string/musicfx_title" android:key="musicfx">
+        <intent android:targetPackage="com.android.musicfx" android:targetClass="com.android.musicfx.ControlPanelPicker" />
+    </Preference>
+    <PreferenceCategory android:title="@string/sound_and_notifacation_category_calls_title" android:key="category_calls_and_notification" />
+    <com.android.jrdsettings.DefaultRingtonePreference android:persistent="false" android:title="@string/ringtone_title" android:key="ringtone" android:dialogTitle="@string/ringtone_title" android:ringtoneType="ringtone" />
+    <CheckBoxPreference android:title="@string/ascending_ringing" android:key="ascending_ringing" />
+    <com.android.jrdsettings.DefaultRingtonePreference android:persistent="false" android:title="@string/sound_notifaction_title" android:key="notification_sound" android:dialogTitle="@string/notification_sound_dialog_title" android:ringtoneType="notification" />
+    <PreferenceCategory android:title="@string/sound_category_system_title" /> Do not nest these, or removals in code will break
+<CheckBoxPreference android:title="@string/dtmf_tone_enable_title" android:key="dtmf_tone" android:summary="@string/dtmf_tone_enable_summary" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/sound_effects_enable_title" android:key="sound_effects" android:summary="@string/sound_effects_enable_summary" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/lock_sounds_enable_title" android:key="lock_sounds" android:summary="@string/lock_sounds_enable_summary" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/haptic_feedback_enable_title" android:key="haptic_feedback" android:summary="@string/haptic_feedback_enable_summary" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/switch_on_title" android:key="sound_switch_on_ringtone" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/switch_off_title" android:key="sound_switch_off_ringtone" android:defaultValue="true" /> Dock
+<PreferenceCategory android:title="@string/dock_settings" android:key="dock_category" /> Do not nest these, or removals in code will break
+<PreferenceScreen android:title="@string/dock_audio_settings_title" android:key="dock_audio">
+        <CheckBoxPreference android:enabled="true" android:title="@string/bluetooth_dock_settings_a2dp" android:key="dock_audio_media_enabled" />
+    </PreferenceScreen>
+    <CheckBoxPreference android:title="@string/dock_sounds_enable_title" android:key="dock_sounds" android:defaultValue="false" />
+</PreferenceScreen>

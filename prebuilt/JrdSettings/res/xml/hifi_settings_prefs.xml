@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:persistent="false" android:title="@string/about_hifi_title" />
+    <Preference android:persistent="false" android:key="about_hifi" android:summary="@string/about_hifi_msg" />
+    <PreferenceCategory android:persistent="false" android:title="@string/hifi_mode_title" />
+    <Preference android:persistent="false" android:key="hifi_mode" android:summary="@string/hifi_mode_msg" />
+    <PreferenceCategory android:persistent="false" android:title="@string/hifi_on_title" />
+    <Preference android:persistent="false" android:key="hifi_mode_on" android:summary="@string/hifi_on_msg" />
+    <PreferenceCategory android:persistent="false" android:title="@string/hifi_more_title" />
+    <Preference android:persistent="false" android:key="hifi_more" android:summary="@string/hifi_more_msg" />
+</PreferenceScreen>

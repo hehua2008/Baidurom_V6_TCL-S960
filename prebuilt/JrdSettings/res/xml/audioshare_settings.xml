@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/audioshare_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.jrdsettings.audioshare.AudioShareDeviceCategory android:persistent="false" android:enabled="true" android:title="@string/audioshare_available_speakers" android:selectable="true" android:key="available_speakers" android:shouldDisableView="false" />
+    <com.android.jrdsettings.audioshare.AudioShareSettingCategory android:persistent="false" android:enabled="true" android:title="@string/audioshare_settings" android:selectable="true" android:key="share_settings" android:shouldDisableView="false" />
+</PreferenceScreen>

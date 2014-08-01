@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/fontsize_section" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left" android:id="@id/fontszie_description_text" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="16.0dip" android:text="@string/title_font_size" />
+        <LinearLayout android:orientation="vertical" android:id="@id/font_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/font_small_group" android:background="@*android:drawable/list_selector_holo_light" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/font_small_view" android:background="@drawable/ic_font_size_image" android:layout_width="8.0dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="13.0sp" android:gravity="left|center" android:id="@id/font_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="?android:scrollbarSize" android:minHeight="?android:listPreferredItemHeight" android:text="@string/small_font" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/font_normal_group" android:background="@*android:drawable/list_selector_holo_light" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/font_normal_view" android:background="@drawable/ic_font_size_image" android:layout_width="8.0dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="15.0sp" android:gravity="left|center" android:id="@id/font_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="?android:scrollbarSize" android:minHeight="?android:listPreferredItemHeight" android:text="@string/normal_font" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/font_large_group" android:background="@*android:drawable/list_selector_holo_light" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/font_large_view" android:background="@drawable/ic_font_size_image" android:layout_width="8.0dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="20.0sp" android:gravity="left|center" android:id="@id/font_large" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="?android:scrollbarSize" android:minHeight="?android:listPreferredItemHeight" android:text="@string/medium_font" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/font_extralarge_group" android:background="@*android:drawable/list_selector_holo_light" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/font_extralarge_view" android:background="@drawable/ic_font_size_image" android:layout_width="8.0dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="25.0sp" android:gravity="left|center" android:id="@id/font_extralarge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="?android:scrollbarSize" android:minHeight="?android:listPreferredItemHeight" android:text="@string/large_font" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

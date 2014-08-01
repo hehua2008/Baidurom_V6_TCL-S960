@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/gestures_call_settings_title" android:key="call_category">
+        <CheckBoxPreference android:title="@string/gestures_call_settings_preference" android:key="calls_preference" android:summary="@string/gestures_call_settings_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/gestures_alarm_settings_title" android:key="alarm_category">
+        <SwitchPreference android:title="@string/gestures_alarm_settings_preference" android:key="alarm_preference" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/gestures_music_settings_title" android:key="music_category">
+        <CheckBoxPreference android:title="@string/gestures_music_settings_preference" android:key="music_preference" android:summary="@string/gestures_music_settings_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

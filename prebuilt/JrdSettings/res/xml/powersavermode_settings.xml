@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:persistent="true" android:entries="@array/screen_brightness_entries" android:title="@string/brightness" android:key="jrdpowsaver_brightness" android:summary="" android:entryValues="@array/screen_brightness_values" />
+    <ListPreference android:persistent="true" android:entries="@array/screen_timeout_entries" android:title="@string/screen_timeout" android:key="jrdscreen_timeout" android:summary="@string/screen_timeout_summary" android:entryValues="@array/screen_timeout_values" />
+    <SwitchPreference android:persistent="true" android:title="@string/wifi_settings" android:key="jrdtoggle_wifi" android:disableDependentsState="true" />
+    <SwitchPreference android:persistent="true" android:title="@string/bluetooth" android:key="jrdtoggle_bt" android:disableDependentsState="true" />
+    <SwitchPreference android:persistent="true" android:title="@string/usage_type_gps" android:key="jrdtoggle_gps" android:disableDependentsState="true" />
+    <SwitchPreference android:persistent="true" android:title="@string/data_usage_menu_auto_sync" android:key="jrdtoggle_autosync" android:disableDependentsState="true" />
+    <SwitchPreference android:persistent="true" android:singleLine="false" android:title="@string/powersaver_dataconnection" android:key="jrdtoggle_datatraffic" android:summary="@string/powersaver_dataconnection_summary" android:disableDependentsState="true" />
+    <PreferenceScreen android:title="@string/powersaver_whitelist_label" android:key="whitelist" android:summary="@string/powersaver_whitelist_summary">
+>
+<intent android:targetPackage="com.android.jrdsettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.jrdsettings.powersaver.JrdAppPicker" android:order="100" />
+    </PreferenceScreen>
+</PreferenceScreen>

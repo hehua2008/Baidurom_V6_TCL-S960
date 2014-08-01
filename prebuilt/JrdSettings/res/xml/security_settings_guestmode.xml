@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/title_guestmode_preference" android:key="security_category">
+        <com.android.jrdsettings.remotesecurity.RemoteSecuritySwitchPreference android:title="@string/title_guestmode_preference" android:key="guestmode_preference" android:summary="@string/summary_guestmode_preference" />
+    </PreferenceCategory>
+</PreferenceScreen>

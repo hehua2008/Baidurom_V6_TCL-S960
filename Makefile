@@ -44,7 +44,7 @@ vendor_remove_dirs := app vendor/operator/app
 #-----------------------------------------------------------------------------
 vendor_saved_apps := Bluetooth FMRadio FMRadioWidget MtkBt InputDevices JrdGallery\
 			BasicDreams EngineerMode HTMLViewer MediaProvider MusicFX\
-			FactoryChargingMode HoloSpiralWallpaper\
+			FactoryChargingMode HoloSpiralWallpaper JrdSettings\
 			JrdMusic_v2.3.006_signed LocationEM\
 			MediatekDM MMITestdev NetworkLocation Galaxy4
 			#MTKLogger StkSelection Stk Stk1 MagicSmokeWallpapers

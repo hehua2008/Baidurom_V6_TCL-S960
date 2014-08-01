@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.jrdsettings.powersaver.JrdSwitchPreference android:icon="@drawable/ic_setting_switch_powersavingmode" android:title="@string/powersav_settings_preference" android:key="powersave_preference" android:summary="@string/save_mode_summary" android:widgetLayout="@layout/powersave_switch" android:defaultValue="true" />
+    <PreferenceScreen android:icon="@drawable/ic_setting_switch_ultimatesavermode" android:title="@string/super_powersave_settings_title" android:key="super_powersave_preference" android:summary="@string/super_save_summary" android:fragment="com.android.jrdsettings.DreamSettings" />
+    <PreferenceScreen android:icon="@drawable/ic_settings_battery" android:id="@id/battery_settings" android:title="@string/power_usage_summary_title" android:key="battery_settings" android:fragment="com.android.jrdsettings.fuelgauge.PowerUsageSummary" />
+</PreferenceScreen>

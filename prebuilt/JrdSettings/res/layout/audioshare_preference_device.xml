@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/device_icon" android:paddingLeft="4.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_audioshare_device" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <RadioButton android:id="@id/select_device_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@*android:drawable/btn_radio" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ProgressBar android:id="@id/sharing_progress" android:padding="8.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/progress_scanning" android:layout_toLeftOf="@id/select_device_button" android:layout_centerVertical="true" style="?android:attr/progressBarStyleSmallTitle" />
+    <TextView android:ellipsize="end" android:id="@id/device_name" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yes" android:maxLines="2" android:layout_toLeftOf="@id/sharing_progress" android:layout_toRightOf="@id/device_icon" android:layout_centerVertical="true" />
+</RelativeLayout>

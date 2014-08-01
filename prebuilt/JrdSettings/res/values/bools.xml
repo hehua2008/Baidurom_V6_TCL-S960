@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="has_dock_settings">false</bool>
+    <bool name="has_silent_mode">true</bool>
+    <bool name="has_powercontrol_widget">true</bool>
+    <bool name="config_additional_system_update_setting_enable">false</bool>
+    <bool name="auto_confirm_bluetooth_activation_dialog">false</bool>
+    <bool name="config_show_regulatory_info">false</bool>
+    <bool name="auto_hide_keyboard_when_onpause">false</bool>
+    <bool name="tether">true</bool>
+    <bool name="config_msid_enable">false</bool>
+    <bool name="Def_Settings_wifi_network_exist">false</bool>
+    <bool name="def_settings_robot_legal_display">true</bool>
+    <bool name="def_Settings_usb_debugging_enable">true</bool>
+    <bool name="def_Settings_apn_edit_exit_flg">false</bool>
+    <bool name="def_Settings_wifi_direct_hide_flag">true</bool>
+    <bool name="def_Settings_desktop_backup_password_hide_flag">true</bool>
+    <bool name="def_Settings_owner_info_display">true</bool>
+    <bool name="def_settings_encrypt_hide">false</bool>
+    <bool name="def_settings_find_me_back_enable">false</bool>
+    <bool name="Def_Settings_hotspot_enable">true</bool>
+    <bool name="Def_settings_usb_otg_support">true</bool>
+    <bool name="Def_Settings_buildnum_display_enable">true</bool>
+    <bool name="def_settings_UAConfig_enable">true</bool>
+    <bool name="Def_Settings_auto_pop_apn">true</bool>
+    <bool name="Def_settings_order_apn_alphabetically_enable">false</bool>
+    <bool name="Def_Settings_display_screen_off_effect">false</bool>
+</resources>

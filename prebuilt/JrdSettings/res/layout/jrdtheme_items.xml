@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight" android:layout_alignParentLeft="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/jrdtheme_preview" android:layout_width="wrap_content" android:layout_height="32.0dip" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_vertical" android:id="@id/jrdtheme_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RadioButton android:layout_gravity="center_vertical" android:id="@id/jrdtheme_button" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="?android:listPreferredItemHeight" android:layout_alignParentRight="true" />
+</RelativeLayout>

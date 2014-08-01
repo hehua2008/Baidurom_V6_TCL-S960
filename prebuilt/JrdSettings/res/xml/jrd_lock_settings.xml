@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:persistent="false" android:title="@string/jrd_lockscreen_select_lock_title" android:key="unlock_set_or_change" android:summary="@string/unlock_set_unlock_mode_none" />
+    <PreferenceScreen android:title="@string/biometric_weak_improve_matching_title" android:key="biometric_weak_improve_matching" />
+    <CheckBoxPreference android:title="@string/biometric_weak_liveliness_title" android:key="biometric_weak_liveliness" android:summary="@string/biometric_weak_liveliness_summary" />
+    <CheckBoxPreference android:title="@string/lockpattern_settings_enable_visible_pattern_title" android:key="visiblepattern" />
+    <ListPreference android:persistent="false" android:entries="@array/lock_after_timeout_entries" android:title="@string/lock_after_timeout" android:key="lock_after_timeout" android:summary="@string/lock_after_timeout_summary" android:entryValues="@array/lock_after_timeout_values" />
+    <CheckBoxPreference android:title="@string/lockpattern_settings_enable_power_button_instantly_locks" android:key="power_button_instantly_locks" />
+    <Preference android:title="@string/jrd_lockscreen_options_title" android:key="jrd_lockscreen_options" android:summary="@string/jrd_lockscreen_options_summary" />
+    <com.android.jrdsettings.MultiLinePreference android:title="@string/jrd_lockscreen_lock_wallpaper_title" android:key="wallpaper" />
+    <PreferenceScreen android:title="@string/jrd_lockscreen_owner_info_title" android:key="owner_info_settings" android:summary="@string/owner_info_settings_summary" android:fragment="com.android.jrdsettings.OwnerInfoSettings" />
+</PreferenceScreen>

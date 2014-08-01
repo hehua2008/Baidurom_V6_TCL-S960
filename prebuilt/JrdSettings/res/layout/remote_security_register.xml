@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@*android:drawable/ic_menu_gallery" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="20.0sp" android:id="@id/TextView01" android:padding="@dimen/padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remote_security" android:layout_toRightOf="@id/imageView1" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:id="@id/textView1" android:paddingLeft="@dimen/padding_medium" android:paddingBottom="@dimen/padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/emergency_number" />
+    <EditText android:id="@id/edtSec_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_medium" android:layout_marginRight="@dimen/padding_medium" android:ems="10" android:singleLine="true" android:maxLength="32" android:inputType="phone">
+        <requestFocus />
+    </EditText>
+    <TextView android:id="@id/textView2" android:paddingLeft="@dimen/padding_medium" android:paddingRight="@dimen/padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/emergency_number_explanation" />
+    <TextView android:textSize="16.0sp" android:id="@id/textView3" android:paddingLeft="@dimen/padding_medium" android:paddingTop="6.0dip" android:paddingBottom="@dimen/padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_name" />
+    <EditText android:id="@id/edtDeviceName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_medium" android:layout_marginRight="@dimen/padding_medium" android:ems="10" android:singleLine="true" android:maxLength="64" />
+    <Button android:layout_gravity="center" android:id="@id/btnRegister" android:layout_width="210.0dip" android:layout_height="wrap_content" android:text="@string/dlg_ok" />
+</LinearLayout>
